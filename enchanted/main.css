@@ -26,11 +26,15 @@ p {
   font-size: 17pt;
   margin-bottom: 0;
 }
+.logo img { max-width: 30%; }
+.logo span { display: block; }
 .logo {
   margin-bottom: 40px;
   font-size: 52pt;
   font-family: 'Pacifico', cursive;
 }
+.logo.no-text { font-size: 0; line-height: 0; }
+.logo.no-img img { display: none; }
 
 .show ul { padding: 0; margin: 0; }
 .show ul > li { display: inline-block; margin: 10px 0; }
