@@ -18,6 +18,7 @@ and the template within this repository that remotely mimics that layout.
 
 sites | template
 ---|---
+getmagicnow.com|[enchanted/index.html](enchanted/index.html) [view](https://vidbina.github.io/landing-strip/enchanted)
 
 
 

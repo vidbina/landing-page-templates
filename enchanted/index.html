@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="LandingStrip">
+    <meta property="og:title" content="LandingStrip" />
+    <meta property="og:description" content="A simple landing page that features a phonenumber as CTA" />
+    <link rel="icon" href="../res/icon.png" />
+    <title>LandingStrip</title>
+    <script src="modernizr.js"></script>
+  </head>
+
+  <body>
+    <h1 class="logo">LandingStrip</h1>
+
+    <div class="cta">
+      <h2 id="text">Text this phone number to get a ride to one of our recommended places:</h2>
+      <a href="sms://+1-404-555-0107;body=HEY" class="number">+1-404-555-0107</a>
+      <p>Text <i>STRIP</i> see something amazing</p>
+      <p class="disclaimer">Message and/or data-rates may appl</p>
+      <p class="disclaimer">All pun intended
+      <p class="disclaimer">Fake phonenumber generated through <a href="http://fakenumber.org">fakenumber.org</a></p>
+    </div>
+
+    <div class="how">
+      <h2 id="how">How It Works</h2>
+      <p>Download this page, fill in the text and watch the strip light up. It has been inspired by the <i>getmagicnow.com</i> page, but there is not a single line of code that was just copied from the source.</p>
+    </div>
+
+    <div class="show">
+      <h2 id="show">Examples</h2>
+      <ul>
+        <li><img src="../res/ios/screen1.png" alt="Screenshot"></li>
+        <li><img src="../res/ios/screen2.png" alt="Screenshot"></li>
+        <li><img src="../res/ios/screen3.png" alt="Screenshot"></li>
+        <li><img src="../res/ios/screen1.png" alt="Screenshot"></li>
+      </ul>
+    </div>
+
+    <div class="faq">
+      <h2 id="faq">FAQ</h2>
+
+      <dl>
+        <dt>How can I use this?
+        <dd>Open with a text-editor and replace all the dummy strings with your copy.
+
+        <dt>Where is this design from?
+        <dd>The design is inspired by <a href="https://www.getmagicnow.com">Magic</a>.
+      </dl>
+    </div>
+
+    <div class="cta">
+      <h2>Call this fake number if you want:</h2>
+      <a href="sms://+1-404-555-0107;body=HEY" class="number">+1-404-555-0107</a>
+      <p>Text <i>STRIP</i> now to get started!</p>
+      <p class="disclaimer">Message and/or data-rates may apply</p>
+    </div>
+
+    <footer>
+      <p>LandingStrip is a template provided by <a href="http://github.com/vidbina">vidbina</a>, located wherever he is.</p>
+      <ul class="nav">
+        <li><a href="#">Email the Founders</a></li>
+        <li><a href="#">Support / Help</a></li>
+        <li><a href="#">Press Contact</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </footer>
+    <style>
+      .number, i { color: #ff5533; }
+      body, a { color: #333333; }
+      body { 
+        font-family: "open sans", sans-serif;
+        max-width: 646px;
+      }
+
+      /*  responsiveness */
+      @media(min-width: 646px) {
+        /* show screenshots on larger screens */
+        .show { display: block; text-align: center; }
+        .show > ul { font-size: 0; line-height: 0; }
+        img { 
+          width: 280px;
+          margin: 0 10px;
+        }
+      }
+      @media(max-width: 645px) {
+        /* hide everything but the first screenshot on smaller screens */
+        .show > ul > li:not(:first-child) { display: none; }
+      }
+
+      body {
+        margin: 0px auto;
+        padding: 0px 40px;
+      }
+
+      h1, h2 {
+        margin: 50pt 0 20pt 0;
+        text-align: center;
+      }
+      .cta {
+        text-align: center;
+      }
+      .number {
+        display: block;
+        font-size: 48pt;
+        font-weight: bold;
+      }
+      p {
+        font-size: 17pt;
+        margin-bottom: 0;
+      }
+      .logo {
+        margin-bottom: 40px;
+        font-size: 52pt;
+        font-family: 'Pacifico', cursive;
+      }
+
+      .show ul { padding: 0; margin: 0; }
+      .show ul > li { display: inline-block; margin: 10px 0; }
+      .show ul > li > img { max-width: 100%; height: auto; }
+
+      .show ul > li > img { max-width: 100%; height: auto; }
+
+      .faq dl { font-size: 17pt; }
+      .faq dt { margin: 40px 0 0 40px; }
+      .faq dt::before { content: "Q: "; font-weight: bold; }
+      .faq dd { margin: 20px 0 0 40px; }
+
+      .disclaimer {
+        margin: 0;
+        font-size: 10px;
+      }
+
+      footer {
+        text-align: center;
+        max-width: 646px;
+        margin: 50pt auto;
+      }
+      footer p { font-size: 15pt; }
+      footer .nav li { display: inline-block; }
+      footer .nav li:not(:first-child)::before { content: "| " }
+    </style>
+  </body>
+</html>
