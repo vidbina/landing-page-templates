@@ -73,6 +73,7 @@ footer .nav li:not(:first-child)::before { content: "| " }
   }
 }
 @media(max-width: 645px) {
+  body { max-width: 300px; }
   /* hide everything but the first screenshot on smaller screens */
   .logo { font-size: 2em; }
   .show > ul > li:not(:first-child) { display: none; }
