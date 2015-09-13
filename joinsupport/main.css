@@ -14,6 +14,8 @@ aside {
 aside a { color: #333; font-weight: 600; }
 
 main {
+  font-size: 1.2em;
+  text-align: center;
   width: 50%;
   right: 0;
   position: absolute;
@@ -21,6 +23,11 @@ main {
   z-index: 50;
   color: #000;
   background: #ff5533;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 main > section {
@@ -48,7 +55,7 @@ form {
   text-align: center;
 }
 .single {
-  border: 1px solid #ff5533;
+  border: 1px solid #333;
   display: inline-block;
   margin: 50px 0 0 0 ;
   border-radius: 1.1em;
@@ -69,9 +76,11 @@ form {
   width: auto;
 }
 .single input.inset, .single button {
+  color: #333;
   background: #ff5533;
   border: none;
   border-radius: 1em;
+  font-weight: 600;
 }
 
 aside > .logo > img { width: 40px; }
@@ -120,12 +129,34 @@ footer { padding: 50px 0; }
 }
 .iphone img { }
 
+.faq dt { font-weight: bold; padding-top: 1em; }
+.faq dd { padding-top: 0.25em; }
+
 @media(max-width: 350px) {
   .iphone img { width: 80%; } 
   .single input { width: 100%; }
   .single input.inset, .single button {
     width: 100%;
   }
+}
+
+.grid ul { 
+  list-style-type: none;
+  padding-left: 0;
+  padding: 0 40px;
+}
+
+.grid ul li {
+  width: 40%;
+  height: 20%;
+  display: inline-block;
+  max-width: 150px;
+  margin: 20px 40px;
+}
+.grid ul li img {
+  width: 100%;
+  border: 2px solid #ff5533;
+  border-radius: 50%;
 }
 
 @media(max-width: 1200px) {
