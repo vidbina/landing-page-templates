@@ -18,9 +18,9 @@ and the template within this repository that remotely mimics that layout.
 
 sites | template
 ---|---
-getmagicnow.com|[enchanted/index.html](enchanted/index.html) [view](https://vidbina.github.io/landing-strip/enchanted)
-bufferapp.com|[pipeline/index.html](pipeline/index.html) [view](https://vidbina.github.io/landing-strip/pipeline)
-joinassist.com|[joinsupport/index.html](joinsupport/index.html) [view](https://vidbina.github.io/landing-strip/joinsupport)
+getmagicnow.com|[enchanted/index.html](enchanted) [view](https://vidbina.github.io/landing-strip/enchanted)
+bufferapp.com|[pipeline/index.html](pipeline) [view](https://vidbina.github.io/landing-strip/pipeline)
+joinassist.com|[joinsupport/index.html](joinsupport [view](https://vidbina.github.io/landing-strip/joinsupport)
 
 
 
