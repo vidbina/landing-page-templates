@@ -1,8 +1,13 @@
 i.fa, main h1, main h2 { color: #ff5533; }
 
-.single input.inset, .single button {
+.download a, .single input.inset, .single button {
   color: #333;
   background: #ff5533;
+}
+.download a, .single input.inset, .single button {
+  border-radius: 1em;
+  border: none;
+  font-weight: 600;
 }
 
 .place h2, main, main a { color: #ddd; }
@@ -58,9 +63,6 @@ aside > h2 {
   margin: 50px auto 0 auto;
 }
 
-form {
-  text-align: center;
-}
 .single {
   border: 1px solid #333;
   display: inline-block;
@@ -83,8 +85,6 @@ form {
   width: auto;
 }
 .single input.inset, .single button {
-  border: none;
-  border-radius: 1em;
   font-weight: 600;
 }
 
@@ -167,6 +167,15 @@ footer { padding: 50px 0; }
   .single input { text-align: center;}
   .single input.text { width: 100%; }
   .single input.inset { display: block; width: 100%; border-radius: 0 0 1em 1em;}
+}
+
+.download, form { 
+  text-align: center;
+}
+.download a {
+  margin-top: 2em;
+  display: inline-block;
+  padding: 1em;
 }
 
 @media(max-width: 1200px) {
