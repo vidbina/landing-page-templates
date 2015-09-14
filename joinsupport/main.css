@@ -117,6 +117,7 @@ footer { padding: 50px 0; }
 }
 
 .place > h2 {
+  font-size: 1em;
   text-transform: uppercase;
   font-weight: 900;
   display: block;
