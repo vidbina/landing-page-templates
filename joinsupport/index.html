@@ -40,16 +40,17 @@
 
       <footer>
         <ul class="nav">
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#top" class="scroll">How it Works</a></li>
+          <li><a href="#faq" class="scroll">Help</a></li>
+          <li><a href="#team" class="scroll">Team</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
         </ul>
       </footer>
     </aside>
 
     <main>
       <section class="place berlin gradient">
+        <a id="top"></a>
         <h2>Berlin, Germany</h2>
         <div class="iphone">
           <img src="../res/ios/iPhone6.png" alt="LandingStrip on iPhone 6">
@@ -78,6 +79,7 @@
       </section>
 
       <section class="faq">
+        <a id="faq"></a>
         <i class="fa fa-question-circle fa-3x"></i>
         <h2>Frequently Answered Questions</h2>
         <dl>
@@ -102,6 +104,7 @@
       </section>
 
       <section class="grid">
+        <a id="team"></a>
         <i class="fa fa-heart fa-3x"></i>
         <h2>Team</h2>
         <ul>
@@ -188,6 +191,7 @@
       </section>
 
       <section class="info">
+        <a id="join"></a>
         <i class="fa fa-child fa-3x"></i>
         <h2>Join our Team</h2>
         <p>Well, being that this is just a dummy site, there is no team to
@@ -195,7 +199,22 @@
         can entice people <a href="#">here</a>.</p>
       </section>
 
+      <section class="info">
+        <a id="contact"></a>
+        <i class="fa fa-envelope fa-3x"></i>
+        <h2>Contact</h2>
+        <p>Add the means for people to reach out to you here. For me it is <a href="">@vidbina</a>.</p>
+      </section>
+
     </main>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+        } );
+      } );
+    </script>
   </body>
 </html>
