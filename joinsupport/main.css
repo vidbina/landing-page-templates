@@ -1,6 +1,6 @@
 i.fa, main h1, main h2 { color: #ff5533; }
 
-.download a, .single input.inset, .single button {
+.download a, .download i, .single input.inset, .single button {
   color: #333;
   background: #ff5533;
 }
@@ -13,6 +13,9 @@ i.fa, main h1, main h2 { color: #ff5533; }
 .place h2, main, main a { color: #ddd; }
 main { background: #222; }
 
+.download .large {
+  font-size: 2em;
+}
 body { 
   font-family:  "Raleway", "open-sans", sans-serif;
   min-width: 200px;
