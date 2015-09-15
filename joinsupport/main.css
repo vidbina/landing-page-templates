@@ -13,8 +13,8 @@ i.fa, main h1, main h2 { color: #ff5533; }
 .place h2, main, main a { color: #ddd; }
 main { background: #222; }
 
-.download .large {
-  font-size: 2em;
+.download.large {
+  font-size: 1em;
 }
 body { 
   font-family:  "Raleway", "open-sans", sans-serif;
