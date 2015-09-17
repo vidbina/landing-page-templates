@@ -12,6 +12,7 @@ i.fa, main h1, main h2 { color: #ff5533; }
 
 .place h2, main, main a { color: #ddd; }
 main { background: #222; }
+main section a, main section h2, main section dl, main section p { width: 560px; margin: auto;}
 
 .download.large {
   font-size: 1em;
