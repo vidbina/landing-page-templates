@@ -1,10 +1,9 @@
 # Joinsupport
 
-This landing page has been stripped off from [Assist](http://joinassist.com)
-which was selected because it just looks pretty (personal opinion so ignore
-that bit). Anyways, I needed to setup a landing page that looked somewhat like
-that and I'm not redoing that work again when I need something similar in the 
-future.
+This template has been based on [Assist](http://joinassist.com) which was
+selected because it just looks pretty (personal opinion so ignore that bit).
+Anyways, I needed to setup a landing page that looked somewhat like that and
+I'm not redoing that work again when I need something similar in the future.
 
 ## Preview
 
@@ -21,6 +20,6 @@ appears first because it contains the call to action and the navigation links.
 
 ## Usage
 
- - Replace all occurrences of `LandingStrip` in `index.html` with your project
+ - Replace all occurrences of `LandingPage` in `index.html` with your project
  name and modify the remaining copy to your liking.
  - Replace the "Placeholder" and "CTA" texts for whatever your situation warrants

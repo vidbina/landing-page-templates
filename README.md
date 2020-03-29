@@ -1,10 +1,10 @@
-# Landing Strip
+# Landing Pages
 
-This project contains a few layouts of landing pages that have been rewritten 
-to make them usable. This was done because A/B testing is so much easier when
-one doesn't have to spend too much time redesigning pages and can just fill in
-the blanks on a layout that people are probably already familiar with, but even
-that is just an assumption. 
+This project contains a few layouts of landing pages that have been rewritten
+to make them usable. This was done because testing value propositions is so
+much easier when one does not have to spend too much time redesigning pages and
+can just fill in the blanks on a layout that people are probably already
+familiar with, but even that is just an assumption.
 
 The layouts have been inspired by landing pages that are currently out there
 and winning users over :trophy: but **none** of the code has been copied from
@@ -18,9 +18,9 @@ and the template within this repository that remotely mimics that layout.
 
 sites | template
 ---|---
-getmagicnow.com|[enchanted strip](enchanted) [view](https://vidbina.github.io/landing-strip/enchanted)
-bufferapp.com|[pipeline strip](pipeline) [view](https://vidbina.github.io/landing-strip/pipeline)
-joinassist.com|[joinsupport strip](joinsupport) [view](https://vidbina.github.io/landing-strip/joinsupport)
+getmagicnow.com|[enchanted template](enchanted) [view](https://vidbina.github.io/landing-templates/enchanted)
+bufferapp.com|[pipeline template](pipeline) [view](https://vidbina.github.io/landing-templates/pipeline)
+joinassist.com|[joinsupport template](joinsupport) [view](https://vidbina.github.io/landing-templates/joinsupport)
 
 
 
