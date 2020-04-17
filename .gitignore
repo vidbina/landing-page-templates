@@ -1,0 +1,6 @@
+.node-modules
+
+.homedir/*
+!.homedir/.bashrc
+
+project.mk
