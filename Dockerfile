@@ -11,6 +11,24 @@ ARG DOCKER_BASE_IMAGE
 
 FROM ${DOCKER_BASE_IMAGE} AS dev-image
 
+# Install system dependencies and run project-specified installation commands
+# Note that buiild-essential curl and python-dev are installed by default
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libx11-6 \
+    libx11-xcb1 \
+    libxcb1 \
+    libxcb-dri3-0 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxdamage1 \
+    libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 \
+    libdrm2 \
+    libgbm1 \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libgtk-3-0 \
+    && rm -rf /var/lib/apt/lists/*
+
 ARG PROJECT=app
 ENV PROJECT=${PROJECT}
 WORKDIR /tmp/${PROJECT}
