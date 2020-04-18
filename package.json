@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/vidbina/landing-page-templates#readme",
   "dependencies": {
+    "http-server": "^0.12.1",
     "puppeteer": "^3.0.0"
   }
 }
