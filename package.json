@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/vidbina/landing-page-templates/issues"
   },
-  "homepage": "https://github.com/vidbina/landing-page-templates#readme"
+  "homepage": "https://github.com/vidbina/landing-page-templates#readme",
+  "dependencies": {
+    "puppeteer": "^3.0.0"
+  }
 }
