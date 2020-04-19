@@ -1,4 +1,4 @@
-body { 
+body {
   font-family: "open sans", sans-serif;
   max-width: 960px;
   margin: 0px auto;
@@ -7,21 +7,35 @@ body {
   display: block;
 }
 
-header, main { display: block; }
+header,
+main {
+  display: block;
+}
 header h1 {
   text-align: center;
 }
-h2 { text-align: left; }
+h2 {
+  text-align: left;
+}
 
-.logo img { position: relative; top: 4px; height: 30pt; width: auto; }
-.logo span { display: inline-block; }
+.logo img {
+  position: relative;
+  top: 4px;
+  height: 30pt;
+  width: auto;
+}
+.logo span {
+  display: inline-block;
+}
 .logo {
   display: inline-block;
   margin-bottom: 40px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
-main { height: 100%; }
+main {
+  height: 100%;
+}
 section {
   height: 100%;
   display: table-cell;
@@ -37,10 +51,14 @@ section.value-props ol {
 }
 section.value-props li {
   padding-top: 2em;
-  position:relative;
+  position: relative;
 }
-section.value-props li h2 { margin: 0; }
-section.value-props li span { margin: 0; }
+section.value-props li h2 {
+  margin: 0;
+}
+section.value-props li span {
+  margin: 0;
+}
 
 section.value-props ol > li::before {
   background: black;
@@ -61,7 +79,8 @@ section.cta {
   width: 40%;
   vertical-align: middle;
 }
-.cta h1, .cta h2 {
+.cta h1,
+.cta h2 {
   text-align: center;
 }
 .cta a {
@@ -70,32 +89,55 @@ section.cta {
   font-weight: bold;
   font-size: 1.5em;
 }
-.cta a, .cta button {
+.cta a,
+.cta button {
   background-color: #ff5533;
   padding: 20px;
   border-radius: 15px;
   display: block;
 }
 
-footer, footer a {
-  color: #AAA;
+footer,
+footer a {
+  color: #aaa;
 }
 footer {
   text-align: center;
   margin: 50pt auto 20pt auto;
   bottom: 0;
-  border-top: 1px solid #AAA;
+  border-top: 1px solid #aaa;
 }
-footer p { font-size: 1em; }
-footer .nav { padding-left: 0; }
-footer .nav li { display: inline-block; }
-footer .nav li:not(:first-child)::before { content: "| " }
+footer p {
+  font-size: 1em;
+}
+footer .nav {
+  padding-left: 0;
+}
+footer .nav li {
+  display: inline-block;
+}
+footer .nav li:not(:first-child)::before {
+  content: "| ";
+}
 
-@media(max-width: 640px) {
-  .extra { display: none; }
-  .logo { width: 75%; }
-  .logo > span { display: block; font-size: 0.4em; }
-  section { display: block; }
-  section.cta { width: 100%; }
-  section.value-props { width: 100%; }
+@media (max-width: 640px) {
+  .extra {
+    display: none;
+  }
+  .logo {
+    width: 75%;
+  }
+  .logo > span {
+    display: block;
+    font-size: 0.4em;
+  }
+  section {
+    display: block;
+  }
+  section.cta {
+    width: 100%;
+  }
+  section.value-props {
+    width: 100%;
+  }
 }
