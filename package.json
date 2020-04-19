@@ -29,7 +29,6 @@
   "devDependencies": {
     "http-server": "^0.12.1",
     "prettier": "^2.0.4",
-    "puppeteer": "^3.0.0",
-    "standard": "^14.3.3"
+    "puppeteer": "^3.0.0"
   }
 }
