@@ -1,0 +1,34 @@
+{
+  "name": "landing-page-templates",
+  "version": "0.1.0",
+  "description": "Plain HTML+CSS templates of landing pages in the wild",
+  "main": "index.js",
+  "scripts": {
+    "capture": "node capture.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidbina/landing-page-templates.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "templates",
+    "html",
+    "css",
+    "static"
+  ],
+  "author": "David Asabina",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vidbina/landing-page-templates/issues"
+  },
+  "homepage": "https://github.com/vidbina/landing-page-templates#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "prettier": "^2.0.4",
+    "puppeteer": "^3.0.0"
+  }
+}
