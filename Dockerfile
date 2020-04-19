@@ -34,6 +34,8 @@ FROM ${DOCKER_BASE_IMAGE} AS prod-image
 
 USER node
 
+COPY --from=dev-image /usr/lib /usr/lib
+
 ARG PROJECT=app
 ENV PROJECT=${PROJECT}
 WORKDIR /opt/${PROJECT}
