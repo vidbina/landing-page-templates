@@ -89,7 +89,7 @@ Open Chrome/Chromium to take screenshots:
 
 [chrome]: https://www.google.com/chrome/
 [chromium]: https://www.chromium.org/Home
-[firefox]: 
+[firefox]: https://www.mozilla.org/en-US/firefox/new/
 [moz-screenshots]: https://developer.mozilla.org/en-US/docs/Tools/Taking_screenshots
 [py-simplehttpserver]: https://docs.python.org/2/library/simplehttpserver.html
 [py-http-server]: https://docs.python.org/3/library/http.server.html
