@@ -50,9 +50,9 @@ WORKDIR /opt/${PROJECT}
 # and avoid using it as the primary means to keep files from ending up in
 # images mean for deployment.
 # Prefer COPY over ADD
-# Copy Node.js package manifests and install Node.js packages
-ARG NODEJS_PACKAGE_INSTALL_COMMAND="npm install"
 COPY --chown=node . /opt/${PROJECT}/
+
+ARG NODEJS_PACKAGE_INSTALL_COMMAND="npm install"
 RUN ${NODEJS_PACKAGE_INSTALL_COMMAND}
 
 # Do not provide default ports in order to make this choice explicit
