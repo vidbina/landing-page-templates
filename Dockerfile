@@ -15,9 +15,8 @@ FROM ${DOCKER_BASE_IMAGE} AS dev-image
 COPY ./install-deps.sh /tmp/install-deps.sh
 
 # Install system dependencies and run project-specified installation commands
-# Note that build-essential is installed by default
+# Note that there are no packages installed by default
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
     && . /tmp/install-deps.sh \
     && rm -rf /var/lib/apt/lists/*
 
