@@ -1,17 +1,57 @@
-i.fa,
-main h1,
-main h2 {
-  color: #ff5533;
+body {
+  font-family: "Raleway", "open-sans", sans-serif;
+  font-size: 1em;
+  min-width: 200px;
 }
 
-.download a,
-.download i,
+aside {
+  width: 50%;
+  position: fixed;
+  height: 100%;
+  background: #fff;
+  min-height: 100vh;
+}
+
+aside a {
+  color: #333;
+  font-weight: 600;
+}
+
+aside > header > .logo {
+  padding-top: 100px;
+  display: block;
+  text-align: center;
+}
+
+aside > header > .logo > img {
+  width: 40px;
+}
+
+aside > header > h2 {
+  width: 80%;
+  text-align: center;
+  font-weight: 300;
+  margin: 50px auto 0 auto;
+}
+
+i.fa {
+  color: #ff5533;
+  font-size: 2.5em;
+  padding-bottom: 1em;
+}
+
+main h1,
+main h2 {
+  color: #fff;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
 .single input.inset,
 .single button {
   color: #333;
   background: #ff5533;
 }
-.download a,
 .single input.inset,
 .single button {
   border-radius: 1em;
@@ -19,7 +59,7 @@ main h2 {
   font-weight: 600;
 }
 
-.place h2,
+section.place span,
 main,
 main a {
   color: #ddd;
@@ -31,33 +71,11 @@ main section a,
 main section h2,
 main section dl,
 main section p {
-  width: 560px;
+  max-width: 360px;
   margin: auto;
 }
 
-.download.large {
-  font-size: 1em;
-}
-body {
-  font-family: "Raleway", "open-sans", sans-serif;
-  min-width: 200px;
-}
-
-aside {
-  width: 50%;
-  position: fixed;
-  height: 100%;
-  background: #eee;
-  min-height: 100vh;
-}
-
-aside a {
-  color: #333;
-  font-weight: 600;
-}
-
 main {
-  font-size: 1.2em;
   text-align: center;
   width: 50%;
   right: 0;
@@ -78,24 +96,11 @@ main > section:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.logo {
-  padding-top: 100px;
-  display: block;
-  text-align: center;
-}
-
-aside > h2 {
-  width: 80%;
-  text-align: center;
-  font-weight: 300;
-  margin: 50px auto 0 auto;
-}
-
 .single {
-  border: 1px solid #333;
+  border: 1px solid #ddd;
   display: inline-block;
   margin: 50px 0 0 0;
-  border-radius: 1.3em;
+  border-radius: 1em;
   padding: 0.1em 0.2em;
 }
 .single > input {
@@ -108,6 +113,7 @@ aside > h2 {
   margin: 0;
   border: none;
   background: none;
+  outline: 0;
 }
 .single input.text {
   width: auto;
@@ -115,10 +121,6 @@ aside > h2 {
 .single input.inset,
 .single button {
   font-weight: 600;
-}
-
-aside > .logo > img {
-  width: 40px;
 }
 
 .berlin::before {
@@ -141,6 +143,8 @@ footer {
   list-style-type: none;
   text-align: center;
   padding-left: 0;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
 }
 .nav li {
   display: inline-block;
@@ -150,7 +154,7 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 0;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .nav a:hover {
   border-bottom: 6px solid #ff5533;
@@ -160,12 +164,13 @@ footer {
   padding-top: 300px;
 }
 
-.place > h2 {
+.place > span {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 900;
   display: block;
   text-align: center;
+  padding-bottom: 1.5em;
 }
 
 .iphone {
@@ -173,6 +178,11 @@ footer {
   text-align: center;
 }
 .iphone img {
+}
+.iphone p {
+  color: #ff5533;
+  padding-top: 1.5em;
+  font-size: 1.5em;
 }
 
 .faq dt {
@@ -288,7 +298,8 @@ form {
 }
 
 @media (min-width: 600px) {
-  aside h2 {
+  aside h2,
+  aside > header h2 {
     width: 350px;
   }
 }
