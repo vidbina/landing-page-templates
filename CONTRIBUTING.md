@@ -3,6 +3,11 @@
 Prior to contributing, please examine the [Code of Conduct][coc] to honor
 these at all times.
 
+## Formatting source
+
+- Run `npx standard --fix JAVASCRIPT_FILE` for every JS file that has been
+  added or modified
+
 ## Update Screenshots
 
 The table below provides the details for the screenshots which are to be
