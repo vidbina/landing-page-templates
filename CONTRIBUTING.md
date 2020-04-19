@@ -3,6 +3,10 @@
 Prior to contributing, please examine the [Code of Conduct][coc] to honor
 these at all times.
 
+The steps to complete prior to submitting a PR are:
+- [ ] [format source](#format-source)
+- [ ] [update screenshots](#update-screenshots)
+
 ## Format Source
 
 - Run `npx prettier --write .` to "prettify" source
