@@ -3,10 +3,9 @@
 Prior to contributing, please examine the [Code of Conduct][coc] to honor
 these at all times.
 
-## Formatting source
+## Format Source
 
-- Run `npx standard --fix JAVASCRIPT_FILE` for every JS file that has been
-  added or modified
+- Run `npx prettier --write .` to "prettify" source
 
 ## Update Screenshots
 
