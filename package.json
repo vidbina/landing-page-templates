@@ -4,6 +4,7 @@
   "description": "Plain HTML+CSS templates of landing pages in the wild",
   "main": "index.js",
   "scripts": {
+    "capture": "node capture.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
