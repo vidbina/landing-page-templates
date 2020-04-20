@@ -8,16 +8,13 @@ reviewing the pricing plans for the service.
 
 ## Preview
 
-On larger displays, the header contains some extra text which is meant to
-clearly explain in a short one-liner what value the service adds. The value
-propositions and _call to action_ are horizontally aligned.
+### Desktop
 
-![Large preview](preview-large.png)
+![Large preview in which the header contains some extra text which is meant to clearly explain in a short one-liner what value the service adds. The value propositions and call to action are horizontally aligned.](preview-large.png)
 
-On smaller displays, the header is the less verbose version, followed by the
-propositions and the call to action.
+### Mobile
 
-![Mobile preview](preview-small.png)
+![Mobile preview in which the header is less verbose than the desktop layout and the header is followed by the propositions and call to action.](preview-small.png)
 
 ## Usage
 

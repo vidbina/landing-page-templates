@@ -15,15 +15,13 @@ of an e-mail address.
 
 ## Preview
 
-On larger displays, the logo is somewhat large and the screenshots are
-presented in a very simple grid.
+### Desktop
 
-![Large preview](preview-large.png)
+![Large preview in which the logo is displayed enlarged and the screenshots are presented in a very simple grid.](preview-large.png)
 
-On smaller displays, the logo is a bit smaller and some elements are slightly
-reorganized. All but the first one of the screenshots disappear.
+### Mobile
 
-![Mobile preview](preview-small.png)
+![Mobile preview in which the logo is a bit smaller and some elements are slightly reorganized, for example, only the first of the screenshots appears on page.](preview-small.png)
 
 ## Usage
 
