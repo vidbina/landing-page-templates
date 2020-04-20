@@ -4,8 +4,18 @@ Prior to contributing, please examine the [Code of Conduct][coc] to honor
 these at all times.
 
 The steps to complete prior to submitting a PR are:
+- [ ] [compile CSS](#compile-css)
 - [ ] [format source](#format-source)
 - [ ] [update screenshots](#update-screenshots)
+
+> The assumption is made that you are using a Node.js runtime in order to
+> leverage the tooling used in formatting the source, transpiling SCSS to CSS
+> and capturing screenshots.
+
+## Compile CSS
+
+Run `npx node-sass PATH_TO_INPUT_SCSS_FILE PATH_TO_OUTPUT_CSS_FILE` to compile
+SCSS into CSS
 
 ## Format Source
 
