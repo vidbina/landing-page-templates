@@ -7,16 +7,13 @@ I'm not redoing that work again when I need something similar in the future.
 
 ## Preview
 
-On larger displays, the left pane containing the main call to action and
-navigation links appears fixed in frame while the right pane contains some
-extra information.
+### Desktop
 
-![Large preview](preview-large.png)
+![Large preview in which the left pane containing the main call to action and navigation links appears fixed in frame while the right pane contains some extra information.](preview-large.png)
 
-On smaller displays, the fixed pane changes into a header section which. It
-appears first because it contains the call to action and the navigation links.
+### Mobile
 
-![Mobile preview](preview-small.png)
+![Mobile preview in which the fixed pane changes into a header section which and appears first because it contains the call to action and the navigation links.](preview-small.png)
 
 ## Usage
 
