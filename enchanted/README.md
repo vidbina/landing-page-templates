@@ -27,13 +27,13 @@ reorganized. All but the first one of the screenshots disappear.
 
 ## Usage
 
- - Replace all occurrences of `LandingPage` in `index.html` with your project
- name and modify the remaining copy to your liking.
- - Comment out the `.show > ul > li:not(:first-child) { display: none; }` line
- in `main.css` if you want to display all screenshots in the smaller-screen
- version of the page.
- - Set the name and logo image inside the `logo` header.
-   - Specify the `no-img` logo class if one only wants to present a textual
-   logo by hiding the image
-   - Specify the `no-text` logo class if one only wants to present the visual
-   logo by hiding the textual part
+- Replace all occurrences of `LandingPage` in `index.html` with your project
+  name and modify the remaining copy to your liking.
+- Comment out the `.show > ul > li:not(:first-child) { display: none; }` line
+  in `main.css` if you want to display all screenshots in the smaller-screen
+  version of the page.
+- Set the name and logo image inside the `logo` header.
+  - Specify the `no-img` logo class if one only wants to present a textual
+    logo by hiding the image
+  - Specify the `no-text` logo class if one only wants to present the visual
+    logo by hiding the textual part

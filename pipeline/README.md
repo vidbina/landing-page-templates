@@ -21,6 +21,6 @@ propositions and the call to action.
 
 ## Usage
 
- - Replace all occurrences of `LandingPage` in `index.html` with your project
- name and modify the remaining copy to your liking.
- - Set the link for the _call-to-action_.
+- Replace all occurrences of `LandingPage` in `index.html` with your project
+  name and modify the remaining copy to your liking.
+- Set the link for the _call-to-action_.

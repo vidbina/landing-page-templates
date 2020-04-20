@@ -30,13 +30,14 @@ The table below provides the details for the screenshots which are to be
 captured for the different templates..
 
 | Output file       | Width (px) | Height (px) | [Device Profile in Chrome DevTools][chrome-screens] | [Responsive Design Mode in Firefox][firefox-screens] |
-|:------------------|-----------:|------------:|:----------------------------------------------------|:-----------------------------------------------------|
-| preview-large.png | 1440       | 900         | Laptop with HiDPI                                   | Laptop with HiDPI                                    |
-| preview-small.png | 375        | 557         | iPhone 6/7/8                                        | iPhone 6/7/8                                         |
+| :---------------- | ---------: | ----------: | :-------------------------------------------------- | :--------------------------------------------------- |
+| preview-large.png |       1440 |         900 | Laptop with HiDPI                                   | Laptop with HiDPI                                    |
+| preview-small.png |        375 |         557 | iPhone 6/7/8                                        | iPhone 6/7/8                                         |
 
 ### Automated
 
 Prerequisites:
+
 - Docker or Node.js
 
 The easiest way to produce the needed screenshots, is by using the provided
@@ -63,9 +64,8 @@ automatically capture the needed screenshots.
 ### Manual
 
 Prerequisites:
-- local webserver if you have Python installed you can simply run `python -m
-  SimpleHTTPServer` for version [2.x][py-simplehttpserver]  or `python -m
-  http.server` for version [3.x][py-http-server] whenever a webserver is needed
+
+- local webserver if you have Python installed you can simply run `python -m SimpleHTTPServer` for version [2.x][py-simplehttpserver] or `python -m http.server` for version [3.x][py-http-server] whenever a webserver is needed
 - [Firefox][firefox] or [Chrome][chrome]/[Chromium][chromium]
 
 1. Start local webserver (e.g.: `python -m http.server`)
@@ -74,6 +74,7 @@ Prerequisites:
 #### Firefox
 
 Open Firefox to take screenshots:
+
 1. Open [Web Console][firefox-screenshots] (by pressing **Ctrl + Shift + K**
    navigating from the menu "Tools" > "Web Developer" > "Web Console")
 2. Enable the responsive design mode (by clicking the "Responsive Design
@@ -82,12 +83,13 @@ Open Firefox to take screenshots:
 4. Click "Take a screenshot of the viewport" Open the command prompt (by clicking "Run Command" from the dev tools menu
    or pressing **Ctrl + Shift + P**)
 5. Enter `:screenshot` or select "Capture full size screenshot" into the
-   command prompt and save 
+   command prompt and save
 6. Repeat for the devices listed in the table below
 
 #### Chrome/Chromium
 
 Open Chrome/Chromium to take screenshots:
+
 1. [Open Developer Tools][open-chrome-devtools] (by right clicking anwhere on
    the page and selecting "Inspect" or pressing **Ctrl + Shift + I**)
 2. Enable the device toolbar (by clicking the "Toggle Device Toolbar" icon or
@@ -96,7 +98,7 @@ Open Chrome/Chromium to take screenshots:
 4. Open the command prompt (by clicking "Run Command" from the dev tools menu
    or pressing **Ctrl + Shift + P**)
 5. Enter `:screenshot` or select "Capture full size screenshot" into the
-   command prompt and save 
+   command prompt and save
 6. Repeat for the devices listed in the table below
 
 [chrome]: https://www.google.com/chrome/
