@@ -3,7 +3,10 @@
 Prior to contributing, please examine the [Code of Conduct][coc] to honor
 these at all times.
 
+[coc]: ./CODE_OF_CONDUCT.md
+
 The steps to complete prior to submitting a PR are:
+
 - [ ] [compile CSS](#compile-css)
 - [ ] [format source](#format-source)
 - [ ] [update screenshots](#update-screenshots)
@@ -19,7 +22,7 @@ SCSS into CSS
 
 ## Format Source
 
-- Run `npx prettier --write .` to "prettify" source
+Run `npx prettier --write .` to "prettify" source.
 
 ## Update Screenshots
 
@@ -43,10 +46,9 @@ automatically capture the needed screenshots.
 #### Node.js on host
 
 1. Install NPM packages by running `npm install`
-2. Capture screenshots by running `npm run capture TEMPLATE_NAME` where
-   `TEMPLATE_NAME` can be substituted for the name of a subdirectory containing
-   the template (e.g.: "enchanted")
-
+2. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
+   `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory
+   containing the template (e.g.: "enchanted")
 
 #### Node.js in Docker
 
@@ -54,8 +56,8 @@ automatically capture the needed screenshots.
 2. Enter a Bash shell in a container by the previously created image by running
    `make bash`
 3. Install NPM packages by running `npm install`
-4. Capture screenshots by running `npm run capture TEMPLATE_NAME` where
-   `TEMPLATE_NAME` can be substituted for the name of a subdirectory containing
+4. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
+   `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory containing
    the template (e.g.: "enchanted")
 
 ### Manual
@@ -108,4 +110,3 @@ Open Chrome/Chromium to take screenshots:
 [chrome-screens]: https://developers.google.com/web/tools/chrome-devtools/device-mode#viewport
 [firefox-screens]: https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
 [open-chrome-devtools]: https://developers.google.com/web/tools/chrome-devtools/#open
-[coc]: ./CODE_OF_CONDUCT.md
