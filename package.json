@@ -25,7 +25,9 @@
     "url": "https://github.com/vidbina/landing-page-templates/issues"
   },
   "homepage": "https://github.com/vidbina/landing-page-templates#readme",
-  "dependencies": {},
+  "dependencies": {
+    "html5-boilerplate": "^7.3.0"
+  },
   "devDependencies": {
     "http-server": "^0.12.1",
     "node-sass": "^4.13.1",
