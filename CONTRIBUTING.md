@@ -35,7 +35,7 @@ Perform the following steps to produce the Docker image, enter into a Bash
 shell and install the node.js dependencies:
 
 1. Produce the needed image by running `make dev-image`
-2. Enter a Bash shell in a container by the previously created image by running
+2. Enter a Bash shell in a container of the previously created image by running
    `make bash`
 3. Install NPM packages by running `npm install`
 
@@ -65,7 +65,7 @@ first run `npm install`):
 - [main.css][h5bp-maincss] ([README][h5bp-maincss-readme])
 - [normalize.css][h5bp-normalizecss]
 - [js][h5bp-js] assets
-- [miscellaneous][h5bp-extend] information on `meta` tags, DNS prefetching,
+- [miscellaneous][h5bp-extend] information on `meta` tags, DNS pre-fetching,
   search engine configuration options, pingbacks, web app configuration, etc.
 
 [h5bp]: https://html5boilerplate.com/
@@ -77,9 +77,9 @@ first run `npm install`):
 [h5bp-maincss-readme]: https://github.com/h5bp/main.css/blob/master/README.md#maincss
 [h5bp-extend]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
 
-For an improved development experience, run `npx node-sass -w css css` from inside a template directory in order to continously watch
-the css directory and produce the output css files as .scss files are
-updated.
+For an improved development experience, run `npx node-sass -w css css` from
+inside a template directory in order to continuously watch the css directory
+and produce the output css files as .scss files are updated.
 
 ## Compile CSS
 
@@ -93,7 +93,7 @@ Run `npx prettier --write .` to "prettify" source.
 ## Update Screenshots
 
 The table below provides the details for the screenshots which are to be
-captured for the different templates..
+captured for the different templates.
 
 | Output file       | Width (px) | Height (px) | [Device Profile in Chrome DevTools][chrome-screens] | [Responsive Design Mode in Firefox][firefox-screens] |
 | :---------------- | ---------: | ----------: | :-------------------------------------------------- | :--------------------------------------------------- |
@@ -110,13 +110,17 @@ containing the template (e.g.: "enchanted")
 
 Prerequisites:
 
-- local webserver if you have Python installed you can simply run `python -m SimpleHTTPServer` for version [2.x][py-simplehttpserver] or `python -m http.server` for version [3.x][py-http-server] whenever a webserver is needed
+- local webserver
 - [Firefox][firefox] or [Chrome][chrome]/[Chromium][chromium]
+
+> If you have Python installed you can simply run `python -m SimpleHTTPServer`
+> for version [2.x][py-simplehttpserver] or `python -m http.server` for version
+> [3.x][py-http-server] in order to start a local webserver.
 
 Perform the following steps to manually generate screenshots for a
 given template:
 
-1. Start local webserver (e.g.: `python -m http.server`)
+1. Start local webserver (for example by running `npx http-server` or `python -m http.server`)
 2. Update screenshots with [Firefox](#firefox) or
    [Chrome/Chromium](#chromechromium)
 
