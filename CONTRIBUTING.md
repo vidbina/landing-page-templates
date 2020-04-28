@@ -7,13 +7,14 @@ these at all times.
 
 For all contributions, the steps to complete prior to submitting a PR
 are:
+
 - [ ] [compile CSS](#compile-css)
 - [ ] [format source](#format-source)
 - [ ] [update screenshots](#update-screenshots)
 
 ## Setup Environment
 
-You will need a  Node.js runtime in order to leverage the tooling used in
+You will need a Node.js runtime in order to leverage the tooling used in
 formatting the source, transpiling SCSS to CSS and capturing screenshots. A
 package.json and a Dockerfile are provided to respectively facilitate
 development within a Node.js on your host or facilitate development within a
@@ -27,10 +28,12 @@ host themselves.
 ### Node.js in Docker
 
 Prerequisites:
+
 - [Docker](https://docs.docker.com/get-docker/)
 
 Perform the following steps to produce the Docker image, enter into a Bash
 shell and install the node.js dependencies:
+
 1. Produce the needed image by running `make dev-image`
 2. Enter a Bash shell in a container by the previously created image by running
    `make bash`
@@ -43,10 +46,12 @@ into a shell inside a Docker container executing `make bash`.
 ### Node.js on host
 
 Prerequisites:
+
 - [Node.js](https://nodejs.org/en/)
 
 If Node.js is installed, perform the following step to install the node.js
 dependencies:
+
 1. Install NPM packages by running `npm install`
 
 ## Add new template
@@ -55,8 +60,9 @@ In order to add a new template, refer to the [HTML5 Boilerplate][h5bp] project
 as a starting point. You will find some [resources][h5bp-resources] to use as a
 starting point in `node_modules/html5-boilerplate/dist` (provided that you have
 first run `npm install`):
+
 - [index.html][h5bp-indexhtml]
-- [main.css][h5bp-maincss] ([README][h5bp-maincss-README])
+- [main.css][h5bp-maincss] ([README][h5bp-maincss-readme])
 - [normalize.css][h5bp-normalizecss]
 - [js][h5bp-js] assets
 - [miscellaneous][h5bp-extend] information on `meta` tags, DNS prefetching,
@@ -68,7 +74,7 @@ first run `npm install`):
 [h5bp-normalizecss]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/css.md#normalizecss
 [h5bp-js]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/js.md
 [h5bp-maincss]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/css.md#maincss
-[h5bp-maincss-README]: https://github.com/h5bp/main.css/blob/master/README.md#maincss
+[h5bp-maincss-readme]: https://github.com/h5bp/main.css/blob/master/README.md#maincss
 [h5bp-extend]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
 
 ## Compile CSS
@@ -99,13 +105,13 @@ containing the template (e.g.: "enchanted")
 ### Manual
 
 Prerequisites:
-- local webserver if you have Python installed you can simply run `python -m
-  SimpleHTTPServer` for version [2.x][py-simplehttpserver] or `python -m
-  http.server` for version [3.x][py-http-server] whenever a webserver is needed
+
+- local webserver if you have Python installed you can simply run `python -m SimpleHTTPServer` for version [2.x][py-simplehttpserver] or `python -m http.server` for version [3.x][py-http-server] whenever a webserver is needed
 - [Firefox][firefox] or [Chrome][chrome]/[Chromium][chromium]
 
 Perform the following steps to manually generate screenshots for a
 given template:
+
 1. Start local webserver (e.g.: `python -m http.server`)
 2. Update screenshots with [Firefox](#firefox) or
    [Chrome/Chromium](#chromechromium)
@@ -114,6 +120,7 @@ given template:
 
 Open Firefox and perform the following steps to capture the needed
 screenshots:
+
 1. Open [Web Console][firefox-screenshots] (by pressing **Ctrl + Shift + K**
    navigating from the menu "Tools" > "Web Developer" > "Web Console")
 2. Enable the responsive design mode (by clicking the "Responsive Design Mode"
@@ -130,6 +137,7 @@ screenshots:
 
 Open Chrome/Chromium and perform the following steps to capture
 the needed screenshots:
+
 1. [Open Developer Tools][open-chrome-devtools] (by right clicking anwhere on
    the page and selecting "Inspect" or pressing **Ctrl + Shift + I**)
 2. Enable the device toolbar (by clicking the "Toggle Device Toolbar" icon or
