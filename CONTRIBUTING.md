@@ -5,15 +5,49 @@ these at all times.
 
 [coc]: ./CODE_OF_CONDUCT.md
 
-The steps to complete prior to submitting a PR are:
-
+For all contributions, the steps to complete prior to submitting a PR
+are:
 - [ ] [compile CSS](#compile-css)
 - [ ] [format source](#format-source)
 - [ ] [update screenshots](#update-screenshots)
 
-> The assumption is made that you are using a Node.js runtime in order to
-> leverage the tooling used in formatting the source, transpiling SCSS to CSS
-> and capturing screenshots.
+## Setup Environment
+
+You will need a  Node.js runtime in order to leverage the tooling used in
+formatting the source, transpiling SCSS to CSS and capturing screenshots. A
+package.json and a Dockerfile are provided to respectively facilitate
+development within a Node.js on your host or facilitate development within a
+Node.js environment within a Docker container. Usage of the Docker image
+simplifies development as all users of the Docker image will be working from a
+near-identical environment such that we can all be more confident of things
+working across the board. Furthermore, the Docker image takes care of certain
+system-level dependencies that one would otherwise have to install on their
+host themselves.
+
+### Node.js in Docker
+
+Prerequisites:
+- [Docker](https://docs.docker.com/get-docker/)
+
+Perform the following steps to produce the Docker image, enter into a Bash
+shell and install the node.js dependencies:
+1. Produce the needed image by running `make dev-image`
+2. Enter a Bash shell in a container by the previously created image by running
+   `make bash`
+3. Install NPM packages by running `npm install`
+
+Note that from now on, whenever we mention any `npm` or `npx` commands, we
+assume that you execute these from inside a Docker container. You may enter
+into a shell inside a Docker container executing `make bash`.
+
+### Node.js on host
+
+Prerequisites:
+- [Node.js](https://nodejs.org/en/)
+
+If Node.js is installed, perform the following step to install the node.js
+dependencies:
+1. Install NPM packages by running `npm install`
 
 ## Compile CSS
 
@@ -36,36 +70,9 @@ captured for the different templates..
 
 ### Automated
 
-The easiest way to produce the needed screenshots, is by using the provided
-Dockerfile and package.json to spawn a Node.js environment with the tooling to
-automatically capture the needed screenshots.
-
-#### Node.js on host
-
-Prerequisites:
-- [Node.js](https://nodejs.org/en/)
-
-Perform the following steps to automatically generate screenshots for
-a given template:
-1. Install NPM packages by running `npm install`
-2. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
-   `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory
-   containing the template (e.g.: "enchanted")
-
-#### Node.js in Docker
-
-Prerequisites:
-- [Docker](https://docs.docker.com/get-docker/)
-
-Perform the following steps to automatically generate screenshots for
-a given template:
-1. Produce the needed image by running `make dev-image`
-2. Enter a Bash shell in a container by the previously created image by running
-   `make bash`
-3. Install NPM packages by running `npm install`
-4. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
-   `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory
-   containing the template (e.g.: "enchanted")
+Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
+`TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory
+containing the template (e.g.: "enchanted")
 
 ### Manual
 
