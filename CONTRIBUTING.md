@@ -49,6 +49,17 @@ If Node.js is installed, perform the following step to install the node.js
 dependencies:
 1. Install NPM packages by running `npm install`
 
+## Add new template
+
+In order to add a new template, refer to the [HTML5 Boilerplate][h5bp] project
+as a starting point. Inside of `node_modules/html5-boilerplate/dist` provides
+several [resources][h5bp-resources]:
+- [index.html][h5bp-indexhtml]
+
+[h5bp]: https://html5boilerplate.com/
+[h5bp-resources]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/TOC.md
+[h5bp-indexhtml]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md#indexhtml
+
 ## Compile CSS
 
 Run `npx node-sass PATH_TO_INPUT_SCSS_FILE PATH_TO_OUTPUT_CSS_FILE` to compile
