@@ -36,15 +36,14 @@ captured for the different templates..
 
 ### Automated
 
-Prerequisites:
-
-- Docker or Node.js
-
 The easiest way to produce the needed screenshots, is by using the provided
 Dockerfile and package.json to spawn a Node.js environment with the tooling to
 automatically capture the needed screenshots.
 
 #### Node.js on host
+
+Prerequisites:
+- [Node.js](https://nodejs.org/en/)
 
 1. Install NPM packages by running `npm install`
 2. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
@@ -53,19 +52,23 @@ automatically capture the needed screenshots.
 
 #### Node.js in Docker
 
+Prerequisites:
+- [Docker](https://docs.docker.com/get-docker/)
+
 1. Produce the needed image by running `make dev-image`
 2. Enter a Bash shell in a container by the previously created image by running
    `make bash`
 3. Install NPM packages by running `npm install`
 4. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
-   `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory containing
-   the template (e.g.: "enchanted")
+   `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory
+   containing the template (e.g.: "enchanted")
 
 ### Manual
 
 Prerequisites:
-
-- local webserver if you have Python installed you can simply run `python -m SimpleHTTPServer` for version [2.x][py-simplehttpserver] or `python -m http.server` for version [3.x][py-http-server] whenever a webserver is needed
+- local webserver if you have Python installed you can simply run `python -m
+  SimpleHTTPServer` for version [2.x][py-simplehttpserver] or `python -m
+  http.server` for version [3.x][py-http-server] whenever a webserver is needed
 - [Firefox][firefox] or [Chrome][chrome]/[Chromium][chromium]
 
 1. Start local webserver (e.g.: `python -m http.server`)
@@ -77,11 +80,12 @@ Open Firefox to take screenshots:
 
 1. Open [Web Console][firefox-screenshots] (by pressing **Ctrl + Shift + K**
    navigating from the menu "Tools" > "Web Developer" > "Web Console")
-2. Enable the responsive design mode (by clicking the "Responsive Design
-   Mode" button or pressing **Ctrl + Shift + M**)
+2. Enable the responsive design mode (by clicking the "Responsive Design Mode"
+   button or pressing **Ctrl + Shift + M**)
 3. Select the device for which to capture screenshot
-4. Click "Take a screenshot of the viewport" Open the command prompt (by clicking "Run Command" from the dev tools menu
-   or pressing **Ctrl + Shift + P**)
+4. Click "Take a screenshot of the viewport" Open the command prompt (by
+   clicking "Run Command" from the dev tools menu or pressing **Ctrl + Shift +
+   P**)
 5. Enter `:screenshot` or select "Capture full size screenshot" into the
    command prompt and save
 6. Repeat for the devices listed in the table below
