@@ -77,6 +77,11 @@ first run `npm install`):
 [h5bp-maincss-readme]: https://github.com/h5bp/main.css/blob/master/README.md#maincss
 [h5bp-extend]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
 
+For an improved development experience, run `npx node-sass -w css
+css` from inside a template directory in order to continously watch
+the css directory and produce the output css files as .scss files are
+updated.
+
 ## Compile CSS
 
 Run `npx node-sass PATH_TO_INPUT_SCSS_FILE PATH_TO_OUTPUT_CSS_FILE` to compile
