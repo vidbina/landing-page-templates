@@ -52,13 +52,24 @@ dependencies:
 ## Add new template
 
 In order to add a new template, refer to the [HTML5 Boilerplate][h5bp] project
-as a starting point. Inside of `node_modules/html5-boilerplate/dist` provides
-several [resources][h5bp-resources]:
+as a starting point. You will find some [resources][h5bp-resources] to use as a
+starting point in `node_modules/html5-boilerplate/dist` (provided that you have
+first run `npm install`):
 - [index.html][h5bp-indexhtml]
+- [main.css][h5bp-maincss] ([README][h5bp-maincss-README])
+- [normalize.css][h5bp-normalizecss]
+- [js][h5bp-js] assets
+- [miscellaneous][h5bp-extend] information on `meta` tags, DNS prefetching,
+  search engine configuration options, pingbacks, web app configuration, etc.
 
 [h5bp]: https://html5boilerplate.com/
 [h5bp-resources]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/TOC.md
 [h5bp-indexhtml]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md#indexhtml
+[h5bp-normalizecss]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/css.md#normalizecss
+[h5bp-js]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/js.md
+[h5bp-maincss]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/css.md#maincss
+[h5bp-maincss-README]: https://github.com/h5bp/main.css/blob/master/README.md#maincss
+[h5bp-extend]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
 
 ## Compile CSS
 
