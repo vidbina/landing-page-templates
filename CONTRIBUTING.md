@@ -45,6 +45,8 @@ automatically capture the needed screenshots.
 Prerequisites:
 - [Node.js](https://nodejs.org/en/)
 
+Perform the following steps to automatically generate screenshots for
+a given template:
 1. Install NPM packages by running `npm install`
 2. Capture screenshots by running `npm run capture TEMPLATE_DIRECTORY` where
    `TEMPLATE_DIRECTORY` can be substituted for the name of a subdirectory
@@ -55,6 +57,8 @@ Prerequisites:
 Prerequisites:
 - [Docker](https://docs.docker.com/get-docker/)
 
+Perform the following steps to automatically generate screenshots for
+a given template:
 1. Produce the needed image by running `make dev-image`
 2. Enter a Bash shell in a container by the previously created image by running
    `make bash`
@@ -71,13 +75,16 @@ Prerequisites:
   http.server` for version [3.x][py-http-server] whenever a webserver is needed
 - [Firefox][firefox] or [Chrome][chrome]/[Chromium][chromium]
 
+Perform the following steps to manually generate screenshots for a
+given template:
 1. Start local webserver (e.g.: `python -m http.server`)
-2. Update screenshots
+2. Update screenshots with [Firefox](#firefox) or
+   [Chrome/Chromium](#chromechromium)
 
 #### Firefox
 
-Open Firefox to take screenshots:
-
+Open Firefox and perform the following steps to capture the needed
+screenshots:
 1. Open [Web Console][firefox-screenshots] (by pressing **Ctrl + Shift + K**
    navigating from the menu "Tools" > "Web Developer" > "Web Console")
 2. Enable the responsive design mode (by clicking the "Responsive Design Mode"
@@ -92,8 +99,8 @@ Open Firefox to take screenshots:
 
 #### Chrome/Chromium
 
-Open Chrome/Chromium to take screenshots:
-
+Open Chrome/Chromium and perform the following steps to capture
+the needed screenshots:
 1. [Open Developer Tools][open-chrome-devtools] (by right clicking anwhere on
    the page and selecting "Inspect" or pressing **Ctrl + Shift + I**)
 2. Enable the device toolbar (by clicking the "Toggle Device Toolbar" icon or
