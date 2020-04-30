@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "capture": "node capture.js",
+    "dev": "dev() { npx http-server $1 & npx node-sass -w $1/css -o $1/css; }; dev",
     "test": "npx prettier -c ."
   },
   "repository": {

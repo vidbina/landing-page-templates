@@ -16,14 +16,15 @@ are:
 
 You will need a Node.js runtime in order to leverage the tooling used in
 formatting the source, transpiling SCSS to CSS and capturing screenshots. A
-package.json and a Dockerfile are provided to respectively facilitate
-development within a Node.js on your host or facilitate development within a
-Node.js environment within a Docker container. Usage of the Docker image
-simplifies development as all users of the Docker image will be working from a
-near-identical environment such that we can all be more confident of things
-working across the board. Furthermore, the Docker image takes care of certain
-system-level dependencies that one would otherwise have to install on their
-host themselves.
+package.json and a Dockerfile are provided toy facilitate development within a
+Node.js environment on your host or in a Node.js environment within a Docker
+container.
+
+Usage of the Docker image simplifies development as all users of the Docker
+image will be working from a near-identical environment such that we can all be
+more confident of things working across the board. Furthermore, the Docker
+image takes care of certain system-level dependencies that one would otherwise
+have to install on their host themselves.
 
 ### Node.js in Docker
 
@@ -54,6 +55,15 @@ dependencies:
 
 1. Install NPM packages by running `npm install`
 
+## Usage
+
+Run `npm run dev -- TEMPLATE_NAME` and fill in the directory of the
+template (for example `npx run dev -- landingcorp`) in order to:
+
+1. Start a development web server at port 8080
+2. Start node-sass to watch for changes in SCSS files to convert
+   those into CSS
+
 ## Add new template
 
 In order to add a new template, refer to the [HTML5 Boilerplate][h5bp] project
@@ -77,9 +87,9 @@ first run `npm install`):
 [h5bp-maincss-readme]: https://github.com/h5bp/main.css/blob/master/README.md#maincss
 [h5bp-extend]: https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
 
-For an improved development experience, run `npx node-sass -w css css` from
-inside a template directory in order to continuously watch the css directory
-and produce the output css files as .scss files are updated.
+For an improved development experience, run `npx node-sass -w css -o css` from inside a template directory in order to continuously watch
+the css directory and produce the output css files as .scss files are
+updated.
 
 ## Compile CSS
 
