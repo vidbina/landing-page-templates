@@ -4,9 +4,10 @@
   "description": "Plain HTML+CSS templates of landing pages in the wild",
   "main": "index.js",
   "scripts": {
+    "fmt": "npx prettier --write .",
     "capture": "node capture.js",
     "dev": "dev() { npx http-server $1 & npx node-sass -w $1/css -o $1/css; }; dev",
-    "test": "npx prettier -c ."
+    "test": "npx prettier --check ."
   },
   "repository": {
     "type": "git",
