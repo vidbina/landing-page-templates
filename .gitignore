@@ -4,3 +4,9 @@ node_modules
 !.homedir/.bashrc
 
 project.mk
+
+# Block package.json files in subdirs
+**/package.json
+
+# Block yarn.lock files in subdirs
+**/yarn.lock
