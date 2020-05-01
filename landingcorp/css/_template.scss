@@ -1,3 +1,6 @@
+// Fonts Varibale
+$defaultFont: 'Montserrat', sans-serif;
+
 // Color Variable
 $whiteColor: #fff;
 $greenColor: #1563ff;
@@ -10,18 +13,53 @@ $extraLargeSize: 2.5rem;
 $largeSize: 2rem;
 $mediumSize: 1.6rem;
 $defaultSize: 1rem;
-$smallSize: .87rem;
-$extraSmallSize: .6rem;
+$smallSize: 0.87rem;
+$extraSmallSize: 0.6rem;
 
-body{
-    font-size: $defaultSize;
-    line-height: 1.625rem;
-    font-weight: 400;
-    color: $blackColor;
-    background-color: $whiteColor;
-    overflow-x: hidden;
-    -webkit-text-size-adjust: 100%;
-    -webkit-overflow-scrolling: touch;
-    -webkit-font-smoothing: antialiased !important;
+body {
+  font-family: $defaultFont;
+  font-size: $defaultSize;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: $blackColor;
+  background-color: $whiteColor;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased !important;
 }
 
+
+// Navbar Style
+.header{
+
+  .navbar{
+    .navbar-brand{
+      padding-right: 50px;
+    }
+
+    .navbar-nav{
+      .nav-item{
+        .nav-link{
+          font-size: 0.938rem;
+          color: $blackColor;
+          text-transform: capitalize;
+          font-weight: 500;
+          padding: .5rem 1rem;
+        }
+        .price_btn{
+          border: 1px solid #d2d2d3;
+          padding: 7px 22px;
+          border-radius: 1px;
+          transition: all .3s ease-in-out;
+
+          &:hover{
+            background-color: #e8e8e9;
+            border-color: #e8e8e9;
+          }
+        }
+      }
+    }
+  }
+  
+}
