@@ -1,7 +1,27 @@
-$primary-color: red;
+// Color Variable
+$whiteColor: #fff;
+$greenColor: #1563ff;
+$blackColor: #000;
+$grayColor: #9396a2;
+$grayColorTwo: #f7f7f9;
 
-body {
-  background-color: $primary-color;
+// Font Size Variable
+$extraLargeSize: 2.5rem;
+$largeSize: 2rem;
+$mediumSize: 1.6rem;
+$defaultSize: 1rem;
+$smallSize: .87rem;
+$extraSmallSize: .6rem;
+
+body{
+    font-size: $defaultSize;
+    line-height: 1.625rem;
+    font-weight: 400;
+    color: $blackColor;
+    background-color: $whiteColor;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
 }
-
 
