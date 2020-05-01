@@ -1,5 +1,5 @@
 // Fonts Varibale
-$defaultFont: 'Montserrat', sans-serif;
+$defaultFont: "Montserrat", sans-serif;
 
 // Color Variable
 $whiteColor: #fff;
@@ -29,31 +29,29 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
-
 // Navbar Style
-.header{
-
-  .navbar{
-    .navbar-brand{
+.header {
+  .navbar {
+    .navbar-brand {
       padding-right: 50px;
     }
 
-    .navbar-nav{
-      .nav-item{
-        .nav-link{
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
           font-size: 0.938rem;
           color: $blackColor;
           text-transform: capitalize;
           font-weight: 500;
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
         }
-        .price_btn{
+        .price_btn {
           border: 1px solid #d2d2d3;
           padding: 7px 22px;
           border-radius: 1px;
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 
-          &:hover{
+          &:hover {
             background-color: #e8e8e9;
             border-color: #e8e8e9;
           }
@@ -61,5 +59,4 @@ body {
       }
     }
   }
-  
 }
