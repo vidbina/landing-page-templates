@@ -37,6 +37,32 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
+// Section Heading Style
+.section_header_wrapper {
+  margin-bottom: 40px;
+  .heading_title {
+    font-size: $extraLargeSize;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+  .heading_desc {
+    margin-top: 25px;
+    font-size: 1.25rem;
+    line-height: 1.55rem;
+  }
+  .heading_link {
+    svg {
+      transform: translateX(0);
+    }
+    &:hover {
+      svg {
+        transform: translateX(3px);
+      }
+      text-decoration: none;
+    }
+  }
+}
+
 // Navbar Style
 .header {
   .navbar {
@@ -206,6 +232,60 @@ body {
 
     .single_logo {
       margin: 0 auto;
+    }
+  }
+}
+
+// Solution Section Style
+.solution_section {
+  padding: 90px 0;
+
+  .single_solution {
+    padding: 40px 30px;
+    background-color: $lightGrayColor;
+    display: table;
+    cursor: pointer;
+
+    &:hover {
+      .body {
+        span {
+          svg {
+            transform: translateX(3px);
+          }
+        }
+      }
+    }
+
+    .icon {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .body {
+      margin-left: 20px;
+      h3 {
+        font-size: 1.5rem;
+        line-height: 1.417em;
+        font-weight: 400;
+        margin: 0 0 8px;
+        strong {
+          font-weight: 700;
+        }
+      }
+      p {
+        font-size: 0.938rem;
+        letter-spacing: 0.01em;
+        line-height: 1.667em;
+        margin: 0 0 16px;
+        color: #373942;
+      }
+      span {
+        display: inline-block;
+        color: $greenColor;
+
+        svg {
+          transform: translateX(0);
+        }
+      }
     }
   }
 }
