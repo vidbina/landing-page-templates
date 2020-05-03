@@ -6,6 +6,7 @@ $whiteColor: #fff;
 $greenColor: #1563ff;
 $blackColor: #000;
 $grayColor: #9396a2;
+$lightGrayColor: #f7f7f9;
 $grayColorTwo: #f7f7f9;
 
 // Font Size Variable
@@ -15,6 +16,13 @@ $mediumSize: 1.6rem;
 $defaultSize: 1rem;
 $smallSize: 0.87rem;
 $extraSmallSize: 0.6rem;
+
+// Transtion Affect
+.transtion {
+  transition: all 0.3s ease-in-out;
+  -web-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
 
 body {
   font-family: $defaultFont;
@@ -64,6 +72,7 @@ body {
 // Slider Senction Style
 .slider_section {
   position: relative;
+  height: 600px;
 
   &::before {
     position: absolute;
@@ -130,6 +139,56 @@ body {
         svg {
           transform: translateX(3px);
         }
+      }
+    }
+  }
+}
+
+// News Section Style
+.news_section {
+  background: $lightGrayColor;
+  .news_section_container {
+    background-color: $whiteColor;
+    position: relative;
+    top: -60px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    .single_news {
+      padding: 30px 20px;
+
+      &:hover {
+        background-color: $greenColor;
+        .eye_braw {
+          color: white;
+        }
+        h3 {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+
+      .eye_braw {
+        font-size: $extraSmallSize;
+        color: #9396a2;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+      }
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+      }
+      p {
+        font-size: $smallSize;
+        text-transform: capitalize;
+        color: $greenColor;
+        margin-top: 15px;
+        margin-bottom: 0;
+        transition: all 0.3s ease-in-out;
       }
     }
   }
