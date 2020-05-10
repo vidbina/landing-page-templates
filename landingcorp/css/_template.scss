@@ -564,4 +564,68 @@ body {
       }
     }
   }
+
+  //Footer Top Section Style
+  .footer_top_section {
+    padding: 60px 0 40px 0;
+
+    .footer_logo_wrapper {
+      overflow: hidden;
+
+      .footer_logo {
+        width: 50%;
+        margin-bottom: 60px;
+        float: left;
+
+        span {
+          color: #76767d;
+          display: block;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          line-height: 1.125rem;
+          text-transform: uppercase;
+        }
+        p {
+          display: block;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          margin-top: 8px;
+          color: #dcdde0;
+        }
+      }
+    }
+
+    .links_wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .links {
+        h3 {
+          color: #76767d;
+          display: block;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          line-height: 1.125rem;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            a {
+              display: inline-block;
+              color: #dcdde0;
+              margin-bottom: 10px;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: $whiteColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
