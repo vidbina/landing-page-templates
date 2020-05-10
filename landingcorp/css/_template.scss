@@ -436,54 +436,102 @@ body {
 }
 
 //Call to action Section Style
-.call_to_action_section{
+.call_to_action_section {
   padding: 60px 0;
   background-color: $whiteColor;
 
-  .call_to_action_title{
-    h3{
+  .call_to_action_title {
+    h3 {
       font-size: $extraLargeSize;
       color: #1d1e23;
-      letter-spacing: -.01rem;
+      letter-spacing: -0.01rem;
       line-height: 3rem;
       margin-bottom: 0;
     }
   }
-  .call_to_action_info{
+  .call_to_action_info {
     padding-left: 80px;
-    p{
+    p {
       color: #4c4c53;
       font-size: $mediumSize;
       line-height: 2rem;
     }
-    .content_and_link{
+    .content_and_link {
       margin-top: 30px;
-      a{
+      a {
         display: inline-block;
         padding: 12px 20px;
         text-align: center;
         border-radius: 1px;
         border: none;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         text-decoration: none;
         -webkit-appearance: none;
       }
-      .sale_btn{
+      .sale_btn {
         background-color: $greenColor;
         color: $whiteColor;
         margin-right: 16px;
 
-        &:hover{
+        &:hover {
           background-color: #1762f7;
         }
       }
-      .demo{
-        border: 1px solid rgba(29,30,35,.2);
+      .demo {
+        border: 1px solid rgba(29, 30, 35, 0.2);
         color: $blackColor;
 
-        &:hover{
+        &:hover {
           background-color: $lightGrayColor;
           border-color: $lightGrayColor;
+        }
+      }
+    }
+  }
+}
+
+// Footer Section Style
+.footer {
+  background-color: $blackColor;
+
+  .newsletter_wrapper {
+    padding: 60px 0;
+
+    .newsletter_info {
+      input {
+        font-size: 1rem;
+        color: #373942;
+        border: 1px solid #32353c;
+        background: #1d1f25;
+        border-radius: 2px;
+        padding: 12px;
+        width: 320px;
+        line-height: 1.5em;
+        margin-right: 15px;
+
+        &:focus {
+          border-color: red;
+          box-shadow: none;
+        }
+      }
+      button {
+        background-color: $greenColor;
+        color: $whiteColor;
+        border: 0;
+        border-radius: 2px;
+        font-size: 14px;
+        border: 1px solid #1563ff;
+        min-height: 48px;
+        padding: 12px 20px;
+      }
+      .form-check {
+        margin-top: 10px;
+        input {
+          width: auto !important;
+          margin-top: 6px;
+        }
+        label {
+          color: $whiteColor;
         }
       }
     }
