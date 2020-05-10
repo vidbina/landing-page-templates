@@ -434,3 +434,58 @@ body {
     }
   }
 }
+
+//Call to action Section Style
+.call_to_action_section{
+  padding: 60px 0;
+  background-color: $whiteColor;
+
+  .call_to_action_title{
+    h3{
+      font-size: $extraLargeSize;
+      color: #1d1e23;
+      letter-spacing: -.01rem;
+      line-height: 3rem;
+      margin-bottom: 0;
+    }
+  }
+  .call_to_action_info{
+    padding-left: 80px;
+    p{
+      color: #4c4c53;
+      font-size: $mediumSize;
+      line-height: 2rem;
+    }
+    .content_and_link{
+      margin-top: 30px;
+      a{
+        display: inline-block;
+        padding: 12px 20px;
+        text-align: center;
+        border-radius: 1px;
+        border: none;
+        transition: all .3s ease-in-out;
+        text-decoration: none;
+        -webkit-appearance: none;
+      }
+      .sale_btn{
+        background-color: $greenColor;
+        color: $whiteColor;
+        margin-right: 16px;
+
+        &:hover{
+          background-color: #1762f7;
+        }
+      }
+      .demo{
+        border: 1px solid rgba(29,30,35,.2);
+        color: $blackColor;
+
+        &:hover{
+          background-color: $lightGrayColor;
+          border-color: $lightGrayColor;
+        }
+      }
+    }
+  }
+}
