@@ -628,4 +628,53 @@ body {
       }
     }
   }
+
+  //Footer Bottom Style
+  .footer_bottom {
+    border-top: 1px solid #1d1f25;
+    padding: 24px 0 46px;
+
+    .footer_bottom_wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        ul {
+          li {
+            a {
+              color: #dcdde0;
+              transition: all 0.3s ease-in-out;
+              margin-right: 15px;
+
+              &:hover {
+                color: $whiteColor;
+              }
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        ul {
+          li {
+            a {
+              color: #dcdde0;
+              transition: all 0.3s ease-in-out;
+              margin-right: 15px;
+
+              &:hover {
+                color: $whiteColor;
+              }
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
