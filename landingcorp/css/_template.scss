@@ -8,6 +8,7 @@ $blackColor: #000;
 $grayColor: #9396a2;
 $lightGrayColor: #f7f7f9;
 $grayColorTwo: #f7f7f9;
+$grayColorThree: #373942;
 
 // Font Size Variable
 $extraLargeSize: 2.5rem;
@@ -22,6 +23,12 @@ $extraSmallSize: 0.6rem;
   transition: all 0.3s ease-in-out;
   -web-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -348,6 +355,79 @@ body {
         .product_img {
           img {
             margin-top: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Integration Section Style
+.integrations_section {
+  padding: 90px 0;
+  background-color: $lightGrayColor;
+
+  .integration_left_info {
+    h3 {
+      font-size: $extraLargeSize;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    p {
+      color: $grayColorThree;
+    }
+    a {
+      transition: all 0.3s ease-in-out;
+      text-transform: capitalize;
+      svg {
+        transition: all 0.3s ease-in-out;
+        transform: translateX(0);
+      }
+      &:hover {
+        svg {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  .integration_logo_list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+
+    .integration_logo {
+      margin: 16px;
+      width: calc(25% - 32px);
+      background: $whiteColor;
+      justify-content: center;
+      transition: box-shadow 0.25s, transform 0.25s;
+
+      &:hover {
+        box-shadow: 0 16px 28px rgba(37, 38, 45, 0.12);
+        transform: translateY(-4px);
+      }
+
+      .logo {
+        padding-top: 100%;
+        position: relative;
+
+        a {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          padding: 15px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+
+          img {
+            max-width: 100%;
           }
         }
       }
