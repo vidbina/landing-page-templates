@@ -536,4 +536,32 @@ body {
       }
     }
   }
+
+  //Social Wrapper Style
+  .social_wrapper {
+    .social_info {
+      padding: 35px 0;
+      border-bottom: 1px solid #1d1f25;
+      border-top: 1px solid #1d1f25;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+          color: $whiteColor;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+      .social_icon {
+        .list-inline-item {
+          a {
+            color: $whiteColor;
+          }
+        }
+      }
+    }
+  }
 }
