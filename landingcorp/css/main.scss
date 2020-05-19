@@ -902,6 +902,33 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+  .header .navbar {
+    .navbar-nav {
+      .nav-item {
+        .menu_area {
+          .menu_container {
+            .content_panel {
+              .content_flex {
+                flex-direction: column;
+
+                .list {
+                  &:first-child {
+                    margin-bottom: 40px;
+                  }
+                }
+              }
+              .learn_product {
+                display: none;
+              }
+            }
+            .content_band {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
   .product_section {
     .product_section_area {
       .product_menu_list {
