@@ -1,14 +1,27 @@
-// Fonts Varibale
+// Fonts
 $defaultFont: "Montserrat", sans-serif;
 
-// Color Variable
+// Colors
 $whiteColor: #fff;
-$greenColor: #1563ff;
 $blackColor: #000;
-$grayColor: #9396a2;
-$lightGrayColor: #f7f7f9;
-$grayColorTwo: #f7f7f9;
-$grayColorThree: #373942;
+$darkGrayColor: #1d1f25;
+$mediumGrayColor: #373942;
+$lightGrayColor: #9396a2;
+$brightGrayColor: #f7f7f9;
+
+$accentPrimaryColor: #ff0000;
+$accentSecondaryColor: #dd0000;
+
+$backgroundPrimaryColor: $whiteColor;
+$backgroundSecondaryColor: $brightGrayColor;
+
+$backgroundInversePrimaryColor: $blackColor;
+
+$foregroundPrimaryColor: $blackColor;
+$foregroundSecondaryColor: $mediumGrayColor;
+
+$foregroundInversePrimaryColor: $whiteColor;
+$foregroundInverseSecondaryColor: $lightGrayColor;
 
 // Font Size Variable
 $extraLargeSize: 2.5rem;
@@ -26,6 +39,7 @@ $extraSmallSize: 0.6rem;
 }
 
 a {
+  color: $accentPrimaryColor;
   &:hover {
     text-decoration: none;
   }
@@ -36,8 +50,8 @@ body {
   font-size: $defaultSize;
   line-height: 1.625rem;
   font-weight: 400;
-  color: $blackColor;
-  background-color: $whiteColor;
+  color: $foregroundPrimaryColor;
+  background-color: $backgroundPrimaryColor;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
@@ -81,20 +95,20 @@ body {
       .nav-item {
         .nav-link {
           font-size: 0.938rem;
-          color: $blackColor;
+          color: $foregroundPrimaryColor;
           text-transform: capitalize;
           font-weight: 500;
           padding: 0.5rem 1rem;
         }
         .price_btn {
-          border: 1px solid #d2d2d3;
+          border: 1px solid $foregroundInverseSecondaryColor;
           padding: 7px 22px;
           border-radius: 1px;
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            background-color: #e8e8e9;
-            border-color: #e8e8e9;
+            background-color: $backgroundSecondaryColor;
+            border-color: $backgroundSecondaryColor;
           }
         }
       }
@@ -120,13 +134,13 @@ body {
     padding-top: 120px;
 
     h3 {
-      color: $whiteColor;
+      color: $foregroundInversePrimaryColor;
       font-size: 3.5rem;
       font-weight: 700;
       line-height: 4.25rem;
     }
     p {
-      color: $whiteColor;
+      color: $brightGrayColor;
       margin: 25px 75px;
       font-size: 18px;
     }
@@ -143,10 +157,10 @@ body {
         }
       }
       button {
-        background-color: $greenColor;
+        background-color: $accentPrimaryColor;
         border: 0;
         height: 55px;
-        color: $whiteColor;
+        color: $foregroundInversePrimaryColor;
         padding: 0 15px;
         margin-left: -5px;
 
@@ -158,11 +172,11 @@ body {
     .sales_team_link {
       display: inline-block;
       margin-top: 30px;
-      color: $whiteColor;
+      color: $foregroundInversePrimaryColor;
       transition: all 0.5s ease-in-out;
 
       svg {
-        color: $greenColor;
+        color: $accentPrimaryColor;
         transform: translateX(0px);
         transition: all 0.5s ease-in-out;
       }
@@ -179,9 +193,9 @@ body {
 
 // News Section Style
 .news_section {
-  background: $lightGrayColor;
+  background: $brightGrayColor;
   .news_section_container {
-    background-color: $whiteColor;
+    background-color: $backgroundPrimaryColor;
     position: relative;
     top: -60px;
     display: flex;
@@ -192,21 +206,21 @@ body {
       padding: 30px 20px;
 
       &:hover {
-        background-color: $greenColor;
-        .eye_braw {
-          color: white;
+        background-color: $accentPrimaryColor;
+        .highlight {
+          color: $foregroundInversePrimaryColor;
         }
         h3 {
-          color: white;
+          color: $foregroundInversePrimaryColor;
         }
         p {
-          color: white;
+          color: $foregroundInversePrimaryColor;
         }
       }
 
-      .eye_braw {
+      .highlight {
         font-size: $extraSmallSize;
-        color: #9396a2;
+        color: $foregroundSecondaryColor;
         text-transform: uppercase;
         transition: all 0.3s ease-in-out;
       }
@@ -218,7 +232,7 @@ body {
       p {
         font-size: $smallSize;
         text-transform: capitalize;
-        color: $greenColor;
+        color: $accentPrimaryColor;
         margin-top: 15px;
         margin-bottom: 0;
         transition: all 0.3s ease-in-out;
@@ -229,7 +243,7 @@ body {
 
 // Trusted Section Style
 .trusted_logo {
-  background-color: $lightGrayColor;
+  background-color: $backgroundSecondaryColor;
   padding: 30px 0 80px 0;
 
   .logo_list {
@@ -249,7 +263,7 @@ body {
 
   .single_solution {
     padding: 40px 30px;
-    background-color: $lightGrayColor;
+    background-color: $backgroundSecondaryColor;
     display: table;
     cursor: pointer;
 
@@ -283,11 +297,11 @@ body {
         letter-spacing: 0.01em;
         line-height: 1.667em;
         margin: 0 0 16px;
-        color: #373942;
+        color: $foregroundSecondaryColor;
       }
       span {
         display: inline-block;
-        color: $greenColor;
+        color: $accentPrimaryColor;
 
         svg {
           transform: translateX(0);
@@ -300,15 +314,17 @@ body {
 // Start of Product Section
 .product_section {
   scroll-behavior: smooth;
-  background-color: $blackColor;
+  background-color: $backgroundInversePrimaryColor;
   padding: 90px 0;
   .section_header_wrapper {
-    .heading_title {
-      color: $whiteColor;
-      text-transform: capitalize;
+    color: $foregroundInversePrimaryColor;
+
+    a {
+      color: $foregroundInversePrimaryColor;
     }
-    .heading_desc {
-      color: $whiteColor;
+
+    .heading_title {
+      text-transform: capitalize;
     }
   }
 
@@ -324,15 +340,15 @@ body {
         text-transform: capitalize;
         a {
           transition: all 0.3s ease-in-out;
-          color: #4e515d;
+          color: $foregroundSecondaryColor;
           font-size: 14px;
           &:hover {
-            color: #6a6d7a;
+            color: $foregroundInversePrimaryColor;
             text-decoration: none;
           }
         }
         .current {
-          color: $whiteColor;
+          color: $foregroundInversePrimaryColor;
         }
       }
     }
@@ -345,11 +361,11 @@ body {
         min-height: 70vh;
         .product_details {
           h3 {
-            color: $whiteColor;
+            color: $foregroundInversePrimaryColor;
             margin-top: 50%;
           }
           p {
-            color: #9396a2;
+            color: $foregroundInverseSecondaryColor;
           }
         }
         .product_img {
@@ -365,7 +381,7 @@ body {
 // Integration Section Style
 .integrations_section {
   padding: 90px 0;
-  background-color: $lightGrayColor;
+  background-color: $backgroundSecondaryColor;
 
   .integration_left_info {
     h3 {
@@ -374,7 +390,7 @@ body {
       margin-bottom: 15px;
     }
     p {
-      color: $grayColorThree;
+      color: $foregroundSecondaryColor;
     }
     a {
       transition: all 0.3s ease-in-out;
@@ -438,12 +454,12 @@ body {
 //Call to action Section Style
 .call_to_action_section {
   padding: 60px 0;
-  background-color: $whiteColor;
+  background-color: $backgroundPrimaryColor;
 
   .call_to_action_title {
     h3 {
       font-size: $extraLargeSize;
-      color: #1d1e23;
+      color: $foregroundPrimaryColor;
       letter-spacing: -0.01rem;
       line-height: 3rem;
       margin-bottom: 0;
@@ -452,7 +468,7 @@ body {
   .call_to_action_info {
     padding-left: 80px;
     p {
-      color: #4c4c53;
+      color: $foregroundSecondaryColor;
       font-size: $mediumSize;
       line-height: 2rem;
     }
@@ -469,21 +485,21 @@ body {
         -webkit-appearance: none;
       }
       .sale_btn {
-        background-color: $greenColor;
-        color: $whiteColor;
+        background-color: $accentPrimaryColor;
+        color: $foregroundInversePrimaryColor;
         margin-right: 16px;
 
         &:hover {
-          background-color: #1762f7;
+          background-color: $accentSecondaryColor;
         }
       }
       .demo {
         border: 1px solid rgba(29, 30, 35, 0.2);
-        color: $blackColor;
+        color: $foregroundPrimaryColor;
 
         &:hover {
-          background-color: $lightGrayColor;
-          border-color: $lightGrayColor;
+          background-color: $backgroundSecondaryColor;
+          border-color: $backgroundSecondaryColor;
         }
       }
     }
@@ -500,9 +516,9 @@ body {
     .newsletter_info {
       input {
         font-size: 1rem;
-        color: #373942;
-        border: 1px solid #32353c;
-        background: #1d1f25;
+        color: $foregroundInversePrimaryColor;
+        border: 1px solid $mediumGrayColor;
+        background: $mediumGrayColor;
         border-radius: 2px;
         padding: 12px;
         width: 320px;
@@ -510,19 +526,25 @@ body {
         margin-right: 15px;
 
         &:focus {
-          border-color: red;
+          border-color: $accentPrimaryColor; // TODO: Validate
           box-shadow: none;
         }
       }
       button {
-        background-color: $greenColor;
+        background-color: $accentPrimaryColor;
         color: $whiteColor;
         border: 0;
         border-radius: 2px;
         font-size: 14px;
-        border: 1px solid #1563ff;
+        border: 1px solid $accentPrimaryColor;
         min-height: 48px;
         padding: 12px 20px;
+
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: $accentSecondaryColor;
+          border-color: $accentSecondaryColor;
+        }
       }
       .form-check {
         margin-top: 10px;
@@ -531,7 +553,7 @@ body {
           margin-top: 6px;
         }
         label {
-          color: $whiteColor;
+          color: $foregroundInversePrimaryColor;
         }
       }
     }
@@ -541,8 +563,8 @@ body {
   .social_wrapper {
     .social_info {
       padding: 35px 0;
-      border-bottom: 1px solid #1d1f25;
-      border-top: 1px solid #1d1f25;
+      border-bottom: 1px solid $darkGrayColor;
+      border-top: 1px solid $darkGrayColor;
       display: flex;
       justify-content: space-between;
 
@@ -550,15 +572,20 @@ body {
         h2 {
           font-size: 24px;
           font-weight: 700;
-          color: $whiteColor;
-          text-transform: uppercase;
+          color: $foregroundInversePrimaryColor;
           margin: 0;
         }
       }
       .social_icon {
         .list-inline-item {
           a {
-            color: $whiteColor;
+            color: $foregroundInverseSecondaryColor;
+            i {
+              &::before {
+                font-size: $mediumSize;
+                padding-left: $defaultSize;
+              }
+            }
           }
         }
       }
@@ -578,7 +605,7 @@ body {
         float: left;
 
         span {
-          color: #76767d;
+          color: $foregroundInverseSecondaryColor;
           display: block;
           font-size: 0.75rem;
           font-weight: 700;
@@ -591,7 +618,7 @@ body {
           font-size: 0.875rem;
           line-height: 1.5rem;
           margin-top: 8px;
-          color: #dcdde0;
+          color: $foregroundInversePrimaryColor;
         }
       }
     }
@@ -602,7 +629,7 @@ body {
 
       .links {
         h3 {
-          color: #76767d;
+          color: $foregroundInverseSecondaryColor;
           display: block;
           font-size: 0.75rem;
           font-weight: 700;
@@ -615,12 +642,12 @@ body {
           li {
             a {
               display: inline-block;
-              color: #dcdde0;
+              color: $foregroundInversePrimaryColor;
               margin-bottom: 10px;
               transition: all 0.3s ease-in-out;
 
               &:hover {
-                color: $whiteColor;
+                color: $accentPrimaryColor;
               }
             }
           }
@@ -631,46 +658,25 @@ body {
 
   //Footer Bottom Style
   .footer_bottom {
-    border-top: 1px solid #1d1f25;
+    border-top: 1px solid $darkGrayColor;
     padding: 24px 0 46px;
 
     .footer_bottom_wrapper {
       display: flex;
       justify-content: space-between;
 
-      .left {
-        ul {
-          li {
-            a {
-              color: #dcdde0;
-              transition: all 0.3s ease-in-out;
-              margin-right: 15px;
+      ul {
+        li {
+          a {
+            color: $foregroundInverseSecondaryColor;
+            transition: all 0.3s ease-in-out;
+            margin-right: 15px;
 
-              &:hover {
-                color: $whiteColor;
-              }
-              &:last-child {
-                margin-right: 0;
-              }
+            &:hover {
+              color: $foregroundInversePrimaryColor;
             }
-          }
-        }
-      }
-      .right {
-        ul {
-          li {
-            a {
-              color: #dcdde0;
-              transition: all 0.3s ease-in-out;
-              margin-right: 15px;
-
-              &:hover {
-                color: $whiteColor;
-              }
-
-              &:last-child {
-                margin-right: 0;
-              }
+            &:last-child {
+              margin-right: 0;
             }
           }
         }
