@@ -29,7 +29,7 @@ $foregroundSecondaryColor: $mediumGrayColor;
 $foregroundInversePrimaryColor: $whiteColor;
 $foregroundInverseSecondaryColor: $lightGrayColor;
 
-// Font Size Variable
+// Font Sizes
 $extraLargeSize: 2.5rem;
 $largeSize: 2rem;
 $mediumSize: 1.6rem;
@@ -37,7 +37,7 @@ $defaultSize: 1rem;
 $smallSize: 0.87rem;
 $extraSmallSize: 0.6rem;
 
-// Transtion Affect
+// Transition Effect
 .transtion {
   transition: all 0.3s ease-in-out;
   -web-transition: all 0.3s ease-in-out;
@@ -64,7 +64,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
-// Section Heading Style
+// Section Heading
 .section_header_wrapper {
   margin-bottom: 40px;
   .heading_title {
@@ -90,7 +90,7 @@ body {
   }
 }
 
-// Navbar Style
+// Navbar
 .header {
   .navbar {
     .navbar-brand {
@@ -122,7 +122,7 @@ body {
   }
 }
 
-// Slider Senction Style
+// Slider Section
 .slider_section {
   position: relative;
   height: 600px;
@@ -198,7 +198,7 @@ body {
   }
 }
 
-// News Section Style
+// News Section
 .news_section {
   background: $backgroundSecondaryColor;
   .news_section_container {
@@ -248,7 +248,7 @@ body {
   }
 }
 
-// Trusted Section Style
+// Trusted Section
 .trusted_logo {
   background-color: $backgroundSecondaryColor;
   padding: 30px 0 80px 0;
@@ -264,7 +264,7 @@ body {
   }
 }
 
-// Solution Section Style
+// Solution Section
 .solution_section {
   padding: 90px 0;
 
@@ -318,7 +318,7 @@ body {
   }
 }
 
-// Start of Product Section
+// Product Section
 .product_section {
   scroll-behavior: smooth;
   background-color: $backgroundInversePrimaryColor;
@@ -385,7 +385,7 @@ body {
   }
 }
 
-// Integration Section Style
+// Integration Section
 .integrations_section {
   padding: 90px 0;
   background-color: $backgroundSecondaryColor;
@@ -458,7 +458,7 @@ body {
   }
 }
 
-//Call to action Section Style
+//Call to Action Section
 .call_to_action_section {
   padding: 60px 0;
   background-color: $backgroundPrimaryColor;
@@ -513,7 +513,7 @@ body {
   }
 }
 
-// Footer Section Style
+// Footer Section
 .footer {
   background-color: $backgroundInversePrimaryColor;
 
@@ -566,7 +566,7 @@ body {
     }
   }
 
-  //Social Wrapper Style
+  //Social Wrapper
   .social_wrapper {
     .social_info {
       padding: 35px 0;
@@ -599,7 +599,7 @@ body {
     }
   }
 
-  //Footer Top Section Style
+  //Footer Top
   .footer_top_section {
     padding: 60px 0 40px 0;
 
@@ -663,7 +663,7 @@ body {
     }
   }
 
-  //Footer Bottom Style
+  //Footer Bottom
   .footer_bottom {
     border-top: 1px solid $backgroundInverseBorderColor;
     padding: 24px 0 46px;
