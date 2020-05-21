@@ -4,18 +4,24 @@ $defaultFont: "Montserrat", sans-serif;
 // Colors
 $whiteColor: #fff;
 $blackColor: #000;
-$darkGrayColor: #1d1f25;
-$mediumGrayColor: #373942;
-$lightGrayColor: #9396a2;
-$brightGrayColor: #f7f7f9;
+$darkGrayColor: #222;
+$mediumGrayColor: #333;
+$lightGrayColor: #ddd;
+$brightGrayColor: #eee;
 
-$accentPrimaryColor: #ff0000;
-$accentSecondaryColor: #dd0000;
+// The accent color
+$accentPrimaryColor: #f53;
+// Contrasting color to accent which may be used to overlay text
+$accentPrimaryContrastColor: $whiteColor;
+// Deviation of the accent color to be used during hover
+$accentSecondaryColor: #f50;
 
 $backgroundPrimaryColor: $whiteColor;
 $backgroundSecondaryColor: $brightGrayColor;
 
 $backgroundInversePrimaryColor: $blackColor;
+$backgroundInverseSecondaryColor: $mediumGrayColor;
+$backgroundInverseBorderColor: $darkGrayColor;
 
 $foregroundPrimaryColor: $blackColor;
 $foregroundSecondaryColor: $mediumGrayColor;
@@ -124,6 +130,7 @@ body {
   &::before {
     position: absolute;
     content: "";
+    background-color: $backgroundInversePrimaryColor;
     background-image: url("/images/slider_bg.png");
     top: 0;
     left: 0;
@@ -140,7 +147,7 @@ body {
       line-height: 4.25rem;
     }
     p {
-      color: $brightGrayColor;
+      color: $foregroundInverseSecondaryColor;
       margin: 25px 75px;
       font-size: 18px;
     }
@@ -193,7 +200,7 @@ body {
 
 // News Section Style
 .news_section {
-  background: $brightGrayColor;
+  background: $backgroundSecondaryColor;
   .news_section_container {
     background-color: $backgroundPrimaryColor;
     position: relative;
@@ -418,7 +425,7 @@ body {
     .integration_logo {
       margin: 16px;
       width: calc(25% - 32px);
-      background: $whiteColor;
+      background: $backgroundPrimaryColor;
       justify-content: center;
       transition: box-shadow 0.25s, transform 0.25s;
 
@@ -508,7 +515,7 @@ body {
 
 // Footer Section Style
 .footer {
-  background-color: $blackColor;
+  background-color: $backgroundInversePrimaryColor;
 
   .newsletter_wrapper {
     padding: 60px 0;
@@ -517,8 +524,8 @@ body {
       input {
         font-size: 1rem;
         color: $foregroundInversePrimaryColor;
-        border: 1px solid $mediumGrayColor;
-        background: $mediumGrayColor;
+        border: 1px solid $backgroundInverseSecondaryColor;
+        background: $backgroundInverseSecondaryColor;
         border-radius: 2px;
         padding: 12px;
         width: 320px;
@@ -532,7 +539,7 @@ body {
       }
       button {
         background-color: $accentPrimaryColor;
-        color: $whiteColor;
+        color: $accentPrimaryContrastColor;
         border: 0;
         border-radius: 2px;
         font-size: 14px;
@@ -563,8 +570,8 @@ body {
   .social_wrapper {
     .social_info {
       padding: 35px 0;
-      border-bottom: 1px solid $darkGrayColor;
-      border-top: 1px solid $darkGrayColor;
+      border-bottom: 1px solid $backgroundInverseBorderColor;
+      border-top: 1px solid $backgroundInverseBorderColor;
       display: flex;
       justify-content: space-between;
 
@@ -658,7 +665,7 @@ body {
 
   //Footer Bottom Style
   .footer_bottom {
-    border-top: 1px solid $darkGrayColor;
+    border-top: 1px solid $backgroundInverseBorderColor;
     padding: 24px 0 46px;
 
     .footer_bottom_wrapper {
