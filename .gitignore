@@ -10,3 +10,5 @@ project.mk
 
 # Block yarn.lock files in subdirs
 **/yarn.lock
+
+**/preview-*.png
