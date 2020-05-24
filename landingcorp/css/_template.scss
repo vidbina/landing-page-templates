@@ -93,6 +93,12 @@ body {
 // Navbar
 .header {
   .navbar {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 8px 40px 0px #000;
     .navbar-brand {
       padding-right: 50px;
     }
@@ -290,11 +296,58 @@ body {
   }
 }
 
+.collapsed{
+  position: relative;
+
+
+  .navbar_toggle_icon{
+    position: absolute;
+    right: 1px;
+    background-color: $blackColor;
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+  }
+  .navbar-toggler-icon_one{
+    top: 0;
+  }
+  .navbar-toggler-icon_two{
+    top: 5px;
+  }
+  .navbar-toggler-icon_three{
+    top: 10px;
+  }
+
+}
+.navbar-toggler {
+  position: relative;
+  padding: 6px 14px;
+
+  &:focus{
+    outline: 0;
+  }
+  .navbar_collapsed_icon{
+    position: absolute;
+    right: 1px;
+    background-color: $blackColor;
+    width: 25px;
+    height: 2px;
+    display: none;
+  }
+
+  .navbar_collapsed_icon_one{
+    top: 0;
+  }
+  .navbar_collapsed_icon_two{
+    top: 0;
+  }
+}
+
 // Slider Section
 .slider_section {
   position: relative;
   padding-bottom: calc(128px + 58px);
-  padding-top: calc(128px);
+  padding-top: calc(168px);
   background-color: $backgroundInversePrimaryColor;
 
   .info {
@@ -845,6 +898,304 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+  .section_header_wrapper {
+    .heading_title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  .call_to_action_section {
+    .call_to_action_title {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header .navbar {
+    .navbar-nav {
+      .nav-item {
+        .menu_area {
+          .menu_container {
+            .content_panel {
+              .content_flex {
+                flex-direction: column;
+
+                .list {
+                  &:first-child {
+                    margin-bottom: 40px;
+                  }
+                }
+              }
+              .learn_product {
+                display: none;
+              }
+            }
+            .content_band {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product_section {
+    .product_section_area {
+      .product_menu_list {
+        display: none;
+      }
+      .product_details_area {
+        margin-top: 60px;
+        margin-left: 0;
+        .product_details_wrapper {
+          .product_details h3 {
+            margin-top: 0 !important;
+          }
+          .product_img {
+            img {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .integrations_section {
+    .integration_left_info {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  }
+
+  .call_to_action_section {
+    .call_to_action_title {
+      h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+    .call_to_action_info {
+      padding-left: 0;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+  .footer {
+    .footer_top_section {
+      .links_wrappe {
+        .links {
+          ul {
+            li {
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      .footer_bottom_wrapper {
+        .right {
+          ul {
+            li {
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .left {
+          ul {
+            li {
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      display: none;
+    }
+    .footer_bottom_mobile {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider_section {
+    .info {
+      h3 {
+        font-size: 2.0625rem;
+        letter-spacing: -0.4px;
+        line-height: 2.625rem;
+      }
+    }
+  }
+  .news_section {
+    background-color: $whiteColor;
+
+    .news_section_container {
+      top: 0;
+      display: block;
+
+      .single_news {
+        &:hover {
+          background-color: transparent;
+
+          .eye_braw {
+            color: #9396a2;
+          }
+          h3 {
+            color: $blackColor;
+          }
+          p {
+            color: $accentPrimaryColor;
+          }
+        }
+      }
+    }
+  }
+
+  .trusted_logo {
+    .logo_list {
+      .single_logo {
+        margin: 20px auto;
+        width: 50%;
+        text-align: center;
+      }
+    }
+  }
+
+  .section_header_wrapper {
+    .heading_title {
+      font-size: 1.75rem;
+      letter-spacing: -0.004em;
+      line-height: 1.286em;
+    }
+    .heading_desc {
+      font-size: 1.188rem;
+      letter-spacing: 0.01em;
+      line-height: 1.579em;
+    }
+  }
+
+  .product_section {
+    .product_section_area {
+      .product_details_area {
+        .product_details_wrapper {
+          min-height: 0;
+          margin-top: 60px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+          .product_details {
+            width: 100%;
+            p {
+              font-size: 15px;
+              line-height: 26px;
+            }
+
+            ul {
+              li {
+                a {
+                  svg {
+                    float: right;
+                  }
+                }
+              }
+            }
+          }
+          .product_img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .integrations_section {
+    .integration_logo_list {
+      .integration_logo {
+        width: calc(33% - 32px);
+      }
+    }
+  }
+
+  .call_to_action_section {
+    .call_to_action_title {
+      h3 {
+        margin-bottom: 25px;
+      }
+    }
+    .call_to_action_info {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .footer {
+    .newsletter_wrapper {
+      .newsletter_info {
+        input {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .integrations_section {
+    .integration_left_info {
+      h3 {
+        font-size: 1.75rem;
+        letter-spacing: -0.004em;
+        line-height: 1.286em;
+      }
+    }
+  }
+  .slider_section {
+    .info {
+      .search_wrapper {
+        input {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .integrations_section {
+    .integration_logo_list {
+      .integration_logo {
+        width: calc(50% - 32px);
       }
     }
   }
