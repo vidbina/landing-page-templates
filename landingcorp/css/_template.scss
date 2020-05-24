@@ -1179,7 +1179,12 @@ body {
     }
   }
   .slider_section {
+    padding-bottom: calc(18px + 58px);
+    padding-top: calc(128px);
     .info {
+      p{
+        margin: 30px 0;
+      }
       .search_wrapper {
         input {
           width: 100%;
