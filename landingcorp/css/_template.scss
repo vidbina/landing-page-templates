@@ -675,20 +675,8 @@ body {
         padding-top: 100%;
         position: relative;
 
-        a {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          padding: 15px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-
-          img {
-            max-width: 100%;
-          }
+        img {
+          width: 100%;
         }
       }
     }
