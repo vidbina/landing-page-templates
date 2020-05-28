@@ -486,50 +486,69 @@ body {
 .solution_section {
   padding: 90px 0;
 
-  .single_solution {
-    padding: 40px 30px;
-    background-color: $backgroundSecondaryColor;
-    display: table;
-    cursor: pointer;
+  ol{
+    li{
+      a{
+        padding: 40px 30px;
+        background-color: $backgroundSecondaryColor;
+        display: inline-block;
 
-    &:hover {
-      .body {
-        span {
-          svg {
-            transform: translateX(3px);
+        &:hover{
+          color: $accentPrimaryColor;
+          .single_solution{
+            .body{
+              h3{
+                color: $accentPrimaryColor;
+              }
+            }
           }
         }
-      }
-    }
+        
+        .single_solution {
+          display: table;
+          cursor: pointer;
 
-    .icon {
-      display: table-cell;
-      vertical-align: top;
-    }
-    .body {
-      margin-left: 20px;
-      h3 {
-        font-size: 1.5rem;
-        line-height: 1.417em;
-        font-weight: 400;
-        margin: 0 0 8px;
-        strong {
-          font-weight: 700;
-        }
-      }
-      p {
-        font-size: 0.938rem;
-        letter-spacing: 0.01em;
-        line-height: 1.667em;
-        margin: 0 0 16px;
-        color: $foregroundSecondaryColor;
-      }
-      span {
-        display: inline-block;
-        color: $accentPrimaryColor;
+          &:hover {
+            .body {
+              span {
+                svg {
+                  transform: translateX(3px);
+                }
+              }
+            }
+          }
 
-        svg {
-          transform: translateX(0);
+          .icon {
+            display: table-cell;
+            vertical-align: top;
+          }
+          .body {
+            margin-left: 20px;
+            h3 {
+              font-size: 1.5rem;
+              line-height: 1.417em;
+              font-weight: 400;
+              margin: 0 0 8px;
+              strong {
+                font-weight: 700;
+              }
+            }
+            p {
+              font-size: 0.938rem;
+              letter-spacing: 0.01em;
+              line-height: 1.667em;
+              margin: 0 0 16px;
+              color: $foregroundSecondaryColor;
+            }
+            span {
+              display: inline-block;
+              color: $accentPrimaryColor;
+
+              svg {
+                transform: translateX(0);
+              }
+            }
+          }
         }
       }
     }
@@ -1180,6 +1199,11 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
+  .section_header_wrapper {
+    .heading_desc{
+      font-size: 1.10rem;
+    }
+  }
   .integrations_section {
     .integration_left_info {
       h3 {
@@ -1212,6 +1236,40 @@ body {
     .integration_logo_list {
       .integration_logo {
         width: calc(50% - 32px);
+      }
+    }
+  }
+
+  .solution_section {
+    ol{
+      li{
+        a{
+          padding: 16px 16px 40px;
+          .single_solution{
+            display: block;
+
+            .icon{
+              display: inline-block;
+              margin: 0 24px 24px 0;
+        
+              img{
+                height: 48px;
+                width: 48px;
+              }
+            }
+            .body{
+              margin-left: 0;
+              h3{
+                margin: 0 0 8px;
+                font-size: 1.313rem;
+                line-height: 1.429em;
+              }
+              p{
+                margin: 0 0 16px;
+              }
+            }
+          }
+        }
       }
     }
   }
