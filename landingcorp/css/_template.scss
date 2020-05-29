@@ -741,6 +741,9 @@ body {
 .footer {
   background-color: $backgroundInversePrimaryColor;
 
+  .newsletter_wrapper.newsletter_wrapper_mobile{
+    display: none;
+  }
   .newsletter_wrapper {
     padding: 60px 0;
 
@@ -759,6 +762,7 @@ body {
         &:focus {
           border-color: $accentPrimaryColor; // TODO: Validate
           box-shadow: none;
+          outline: 0;
         }
       }
       button {
@@ -892,6 +896,9 @@ body {
     border-top: 1px solid $backgroundInverseBorderColor;
     padding: 24px 0 46px;
 
+    .newsletter_wrapper_mobile{
+      display: none;
+    }
     .footer_bottom_wrapper {
       display: flex;
       justify-content: space-between;
@@ -1172,16 +1179,22 @@ body {
   }
 
   .footer {
-    .newsletter_wrapper {
+    .newsletter_wrapper.newsletter_wrapper_mobile{
+      display: block;
+
       .newsletter_info {
         input {
           width: 100%;
-          margin-bottom: 15px;
+          margin-bottom: 0;
         }
         button {
           width: 100%;
+          margin-top: 7px;
         }
       }
+    }
+    .newsletter_wrapper {
+      display: none;
     }
   }
 }
@@ -1276,6 +1289,32 @@ body {
         .sale_btn{
           margin-bottom: 10px;
           margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .social_wrapper {
+      .social_info{
+        display: block;
+
+        .social_icon{
+          margin-top: 20px;
+
+          ul{
+            li{
+              &:first-child{
+                a{
+                  i{
+                    &::before{
+                      padding-left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
