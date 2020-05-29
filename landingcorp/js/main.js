@@ -36,3 +36,5 @@ window.addEventListener("scroll", (event) => {
     }
   });
 });
+
+let navbarToggler = document.getElementById("navbar_toggler");
