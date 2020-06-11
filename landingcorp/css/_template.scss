@@ -558,6 +558,7 @@ body {
   scroll-behavior: smooth;
   background-color: $backgroundInversePrimaryColor;
   padding: 90px 0;
+
   .section_header_wrapper {
     color: $foregroundInversePrimaryColor;
 
@@ -570,41 +571,45 @@ body {
     }
   }
 
-  .product_section_area {
-    .product_menu_list {
-      position: sticky;
-      top: 0;
-      bottom: auto;
-      width: auto;
-      margin-left: -50px;
-      padding-top: 200px;
-      .product_menu_item {
-        text-transform: capitalize;
-        a {
-          transition: all 0.3s ease-in-out;
-          color: $foregroundSecondaryColor;
-          font-size: 14px;
-          &:hover {
-            color: $foregroundInversePrimaryColor;
-            text-decoration: none;
+  .product_area {
+    display: flex;
+    flex-direction: row;
+
+    .product_list {
+      flex: 2;
+
+      ul {
+        position: sticky;
+        top: 40%;
+        bottom: auto;
+        width: auto;
+        li {
+          text-transform: capitalize;
+          a {
+            transition: all 0.3s ease-in-out;
+            color: $foregroundSecondaryColor;
+            font-size: 14px;
+            &:hover {
+              color: $foregroundInversePrimaryColor;
+              text-decoration: none;
+            }
           }
-        }
-        .current {
-          color: $foregroundInversePrimaryColor;
+          .current {
+            color: $foregroundInversePrimaryColor;
+          }
         }
       }
     }
     .product_details_area {
-      margin-top: -500px;
-      margin-left: 200px;
+      flex: 6;
       .product_details_wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         min-height: 70vh;
         .product_details {
+          padding-top: 30%;
           h3 {
             color: $foregroundInversePrimaryColor;
-            margin-top: 50%;
           }
           p {
             color: $foregroundInverseSecondaryColor;
@@ -613,6 +618,28 @@ body {
         .product_img {
           img {
             margin-top: 50%;
+          }
+        }
+      }
+    }
+    .product_img_list {
+      flex: 4;
+
+      ul {
+        position: sticky;
+        top: 20%;
+        bottom: auto;
+        width: auto;
+        li {
+          .product_img {
+            display: none;
+
+            img {
+              transition: opacit;
+            }
+          }
+          .product_img.active {
+            display: block;
           }
         }
       }
@@ -838,7 +865,7 @@ body {
         float: left;
 
         span {
-          color: $foregroundInverseSecondaryColor;
+          color: #76767d;
           display: block;
           font-size: 0.75rem;
           font-weight: 700;
@@ -878,6 +905,7 @@ body {
               color: $foregroundInversePrimaryColor;
               margin-bottom: 10px;
               transition: all 0.3s ease-in-out;
+              font-size: 14px;
 
               &:hover {
                 color: $accentPrimaryColor;
@@ -894,9 +922,6 @@ body {
     border-top: 1px solid $backgroundInverseBorderColor;
     padding: 24px 0 46px;
 
-    .newsletter_wrapper_mobile {
-      display: none;
-    }
     .footer_bottom_wrapper {
       display: flex;
       justify-content: space-between;
@@ -907,6 +932,7 @@ body {
             color: $foregroundInverseSecondaryColor;
             transition: all 0.3s ease-in-out;
             margin-right: 15px;
+            font-size: 14px;
 
             &:hover {
               color: $foregroundInversePrimaryColor;
@@ -1026,6 +1052,7 @@ body {
     }
     .footer_bottom {
       .footer_bottom_wrapper {
+        display: block;
         .right {
           ul {
             li {
@@ -1036,6 +1063,7 @@ body {
           }
         }
         .left {
+          margin-bottom: 10px;
           ul {
             li {
               a {
@@ -1045,12 +1073,6 @@ body {
           }
         }
       }
-    }
-    .footer_bottom {
-      display: none;
-    }
-    .footer_bottom_mobile {
-      display: block;
     }
   }
 }
@@ -1327,7 +1349,6 @@ body {
           }
         }
       }
-      
 
       .links_wrapper {
         display: block;
@@ -1351,6 +1372,9 @@ body {
           }
         }
       }
+    }
+    .footer_bottom_wrapper {
+      display: block;
     }
   }
 }

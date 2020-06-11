@@ -962,25 +962,26 @@
         </div>
         <!-- End Of Section Heading -->
 
-        <!-- Start of Product Area -->
-        <div class="product_section_area">
-          <ul class="product_menu_list list-inline">
-            <li class="product_menu_item">
-              <a href="#overview">Overview</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#provision">Top</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#secure">Second</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#connect">Third</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#run">Bottom</a>
-            </li>
-          </ul>
+        <div class="product_area">
+          <div class="product_list">
+            <ul class="list-inline mb-0">
+              <li class="product_menu_item">
+                <a href="#overview" class="overviewLink current">overview</a>
+              </li>
+              <li class="product_menu_item">
+                <a href="#provision" class="provisionLink">provision</a>
+              </li>
+              <li class="product_menu_item">
+                <a href="#secure" class="secureLink">secure</a>
+              </li>
+              <li class="product_menu_item">
+                <a href="#connect" class="connectLink">connect</a>
+              </li>
+              <li class="product_menu_item">
+                <a href="#run" class="runLink">run</a>
+              </li>
+            </ul>
+          </div>
           <div class="product_details_area">
             <section id="overview" class="product_details_wrapper">
               <div class="product_details">
@@ -990,9 +991,6 @@
                   please go ahead and provide a summary of why addressing the
                   individual components or abstraction levels is relevant.
                 </p>
-              </div>
-              <div class="product_img">
-                <img src="./images/stack.png" alt="" />
               </div>
             </section>
             <section id="provision" class="product_details_wrapper">
@@ -1060,9 +1058,6 @@
                     <a href="#">Get started</a>
                   </li>
                 </ul>
-              </div>
-              <div class="product_img">
-                <img src="./images/stack-0.png" alt="" />
               </div>
             </section>
             <section id="secure" class="product_details_wrapper">
@@ -1132,9 +1127,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="product_img">
-                <img src="./images/stack-1.png" alt="" />
-              </div>
             </section>
             <section id="connect" class="product_details_wrapper">
               <div class="product_details">
@@ -1202,9 +1194,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="product_img">
-                <img src="./images/stack-2.png" alt="" />
-              </div>
             </section>
             <section id="run" class="product_details_wrapper">
               <div class="product_details">
@@ -1222,12 +1211,316 @@
                   </li>
                 </ul>
               </div>
-              <div class="product_img">
-                <img src="./images/stack-3.png" alt="" />
-              </div>
             </section>
           </div>
+          <div class="product_img_list">
+            <ul class="list-inline mb-0">
+              <li>
+                <a href="#overview" class="product_img active">
+                  <img src="./images/stack.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#provision" class="product_img">
+                  <img src="./images/stack-0.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#secure" class="product_img">
+                  <img src="./images/stack-1.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#connect" class="product_img">
+                  <img src="./images/stack-2.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#run" class="product_img">
+                  <img src="./images/stack-3.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Start of Product Area -->
+        <!-- <div class="product_section_area">
+          <ul class="product_menu_list list-inline">
+            <li class="product_menu_item">
+              <a href="#overview">Overview</a>
+            </li>
+            <li class="product_menu_item">
+              <a href="#provision">Top</a>
+            </li>
+            <li class="product_menu_item">
+              <a href="#secure">Second</a>
+            </li>
+            <li class="product_menu_item">
+              <a href="#connect">Third</a>
+            </li>
+            <li class="product_menu_item">
+              <a href="#run">Bottom</a>
+            </li>
+          </ul>
+          <div class="product_details_area">
+            <section id="overview" class="product_details_wrapper">
+              <div class="product_details">
+                <h3>The Landing Page Stack</h3>
+                <p>
+                  If the concept of a stack is relevant to your particular case,
+                  please go ahead and provide a summary of why addressing the
+                  individual components or abstraction levels is relevant.
+                </p>
+              </div>
+              
+            </section>
+            <section id="provision" class="product_details_wrapper">
+              <div class="product_details">
+                <h3>One</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"
+                      >Product Feature A
+                      <svg
+                        class="bi bi-arrow-right transtion"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Product Feature B
+                      <svg
+                        class="bi bi-arrow-right transtion"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#">Learn more</a>
+                  </li>
+                  <li>
+                    <a href="#">Get started</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </section>
+            <section id="secure" class="product_details_wrapper">
+              <div class="product_details">
+                <h3>Two</h3>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"
+                      >Product Feature A
+                      <svg
+                        class="bi bi-arrow-right transtion"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Product Feature B
+                      <svg
+                        class="bi bi-arrow-right transtion"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#">Learn more</a>
+                  </li>
+                  <li>
+                    <a href="#">Get started</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </section>
+            <section id="connect" class="product_details_wrapper">
+              <div class="product_details">
+                <h3>Three</h3>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"
+                      >Configurability
+                      <svg
+                        class="bi bi-arrow-right transtion"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Portability
+                      <svg
+                        class="bi bi-arrow-right transtion"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#">Learn more</a>
+                  </li>
+                  <li>
+                    <a href="#">Get started</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </section>
+            <section id="run" class="product_details_wrapper">
+              <div class="product_details">
+                <h3>Four</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#">Learn more</a>
+                  </li>
+                  <li>
+                    <a href="#">Get started</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </section>
+          </div>
+          <div class="product_img_list">
+            <div class="product_img">
+              <img src="./images/stack.png" alt="" />
+            </div>
+
+            <div class="product_img">
+                <img src="./images/stack-0.png" alt="" />
+              </div>
+
+            <div class="product_img">
+              <img src="./images/stack-1.png" alt="" />
+            </div>
+
+            <div class="product_img">
+              <img src="./images/stack-2.png" alt="" />
+            </div>
+
+            <div class="product_img">
+              <img src="./images/stack-3.png" alt="" />
+            </div>
+          </div>
+        </div> -->
         <!-- End of Product Area -->
       </div>
     </section>
@@ -1563,7 +1856,6 @@
                     <li>
                       <a href="#">Contact</a>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -1608,36 +1900,6 @@
         </div>
       </div>
       <!-- End of Footer Bottom Section -->
-
-      <div class="footer_bottom footer_bottom_mobile">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="footer_bottom_wrapper">
-                <div class="left">
-                  <ul class="list-inline mb-0">
-                    <li class="list-inline-item">
-                      <a href="#">System Status</a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#">Cookies</a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#">Terms of Use</a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#">Privacy</a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#">Imprint</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </footer>
     <!-- End of Footer Section -->
 
