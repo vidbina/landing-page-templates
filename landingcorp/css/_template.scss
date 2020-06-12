@@ -361,12 +361,13 @@ body {
       font-size: 18px;
     }
     .search_wrapper {
+      font-size: 0;
       input {
         width: 320px;
         height: 55px;
+        font-size: 15px;
         border: 0;
-        padding: 5px 10px;
-        font-size: 13px;
+        padding: 15px;
 
         &:focus {
           border: 0;
@@ -376,9 +377,9 @@ body {
         background-color: $accentPrimaryColor;
         border: 0;
         height: 55px;
+        font-size: 15px;
         color: $foregroundInversePrimaryColor;
-        padding: 0 15px;
-        margin-left: -5px;
+        padding: 15px;
 
         &:focus {
           border: none;
