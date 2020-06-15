@@ -100,7 +100,7 @@ body {
 .header {
   .navbar {
     position: absolute;
-    background-color: #fff;
+    background-color: $backgroundPrimaryColor;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -177,7 +177,7 @@ body {
           border-radius: 0;
           border: 0;
           padding: 40px 30px;
-          border-top: 1px solid $lightGrayColor;
+          border-top: 1px solid $foregroundInverseSecondaryColor;
           min-height: 402px;
 
           .menu_container {
@@ -227,7 +227,7 @@ body {
                   }
 
                   .item {
-                    color: $blackColor;
+                    color: $foregroundPrimaryColor;
                     font-size: 14px;
                     text-transform: capitalize;
                     display: block;
@@ -241,7 +241,7 @@ body {
 
                 .list {
                   h3 {
-                    color: $blackColor;
+                    color: $foregroundPrimaryColor;
                     font-size: 0.75rem;
                     letter-spacing: 0.06em;
                     line-height: 1.5em;
@@ -258,11 +258,11 @@ body {
               justify-content: flex-end;
 
               .content_band_first {
-                background-color: #eff5ff;
+                background-color: #eff5ff; // TODO: parameterize
                 margin-right: 30px;
               }
               .content_band_last {
-                background-color: #f7f7f9;
+                background-color: #f7f7f9; // TODO: parameterize
               }
               .item_band {
                 height: 344px;
@@ -295,7 +295,7 @@ body {
                       line-height: 1.75rem;
                       font-size: 0.938rem;
                       font-weight: 500;
-                      color: $blackColor;
+                      color: $foregroundPrimaryColor;
                     }
                   }
                 }
@@ -1126,10 +1126,10 @@ body {
             color: #9396a2;
           }
           .highlight {
-            color: $blackColor;
+            color: $foregroundPrimaryColor;
           }
           h3 {
-            color: $blackColor;
+            color: $foregroundPrimaryColor;
           }
           p {
             color: $accentPrimaryColor;
