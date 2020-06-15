@@ -37,6 +37,12 @@ $defaultSize: 1rem;
 $smallSize: 0.87rem;
 $extraSmallSize: 0.6rem;
 
+// Navbar Logo
+$navbarLogo: url("/images/icon-192-black.png");
+$navbarLogoFontSize: 24px; // NOTE: icon edge length should be a multiple
+$navbarLogoFontWeight: 700;
+$navbarLogoSize: 2em; // NOTE: should be > $navbarLogoFontSize
+
 // Transition Effect
 .transtion {
   transition: all 0.3s ease-in-out;
@@ -100,7 +106,24 @@ body {
     z-index: 999;
     box-shadow: 0px 8px 40px 0px #000;
     .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: $foregroundPrimaryColor;
       padding-right: 50px;
+      font-weight: $navbarLogoFontWeight;
+      font-size: $navbarLogoFontSize;
+      margin-right: 0;
+      &::before {
+        content: "";
+        background-image: $navbarLogo;
+        background-repeat: no-repeat;
+        background-attachment: inherit;
+        background-position: 50%;
+        background-size: $navbarLogoFontSize;
+        display: inline-block;
+        height: $navbarLogoSize;
+        width: $navbarLogoSize;
+      }
     }
 
     .navbar-nav {
