@@ -24,18 +24,24 @@ productMenuItem.forEach((link) => {
 });
 
 window.addEventListener("scroll", (event) => {
-  let fromTop = window.scrollY;
+  const setCurrent = (index, arr) => {
+    // TODO: Profile
+    arr.forEach((el, idx) => {
+      if (idx == index) {
+        el.classList.add("current");
+      } else {
+        el.classList.remove("current");
+      }
+    });
+  };
 
-  let manageCurrentState = (el) => {
-    let section = document.querySelector(el.hash);
+  const manageCurrentState = (el, idx, arr) => {
+    const section = document.querySelector(el.hash);
+    const delta = window.scrollY - section.offsetTop;
 
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      el.classList.add("current");
-    } else {
-      el.classList.remove("current");
+    if (delta + section.offsetHeight > 0) {
+      // Ensure that el is scrolled into view (delta > 0) and that
+      setCurrent(idx, arr);
     }
   };
 
