@@ -321,27 +321,28 @@ body {
   }
 }
 
-.collapsed {
-  position: relative;
+//.collapsed {
+//  position: relative;
+//
+//  .navbar_toggle_icon {
+//    position: absolute;
+//    right: 1px;
+//    background-color: $backgroundInversePrimaryColor;
+//    width: 25px;
+//    height: 2px;
+//    display: inline-block;
+//  }
+//  .navbar-toggler-icon_one {
+//    top: 0;
+//  }
+//  .navbar-toggler-icon_two {
+//    top: 5px;
+//  }
+//  .navbar-toggler-icon_three {
+//    top: 10px;
+//  }
+//}
 
-  .navbar_toggle_icon {
-    position: absolute;
-    right: 1px;
-    background-color: $blackColor;
-    width: 25px;
-    height: 2px;
-    display: inline-block;
-  }
-  .navbar-toggler-icon_one {
-    top: 0;
-  }
-  .navbar-toggler-icon_two {
-    top: 5px;
-  }
-  .navbar-toggler-icon_three {
-    top: 10px;
-  }
-}
 .navbar-toggler {
   position: relative;
   padding: 6px 14px;
@@ -349,26 +350,27 @@ body {
   &:focus {
     outline: 0;
   }
-  .navbar_collapsed_icon {
-    position: absolute;
-    right: 1px;
-    background-color: $blackColor;
-    width: 25px;
-    height: 2px;
-    display: none;
-  }
+  //.navbar_collapsed_icon {
+  //  position: absolute;
+  //  right: 1px;
+  //  background-color: $backgroundInversePrimaryColor;
+  //  width: 25px;
+  //  height: 2px;
+  //  display: none;
+  //}
 
-  .navbar_collapsed_icon_one {
-    top: 0;
-  }
-  .navbar_collapsed_icon_two {
-    top: 0;
-  }
+  //.navbar_collapsed_icon_one {
+  //  top: 0;
+  //}
+  //.navbar_collapsed_icon_two {
+  //  top: 0;
+  //}
 }
 
 // Slider Section
 .slider_section {
   position: relative;
+  // NOTE: Why calculated?
   padding-bottom: calc(128px + 58px);
   padding-top: calc(168px);
   background-color: $backgroundInversePrimaryColor;
