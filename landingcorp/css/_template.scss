@@ -43,6 +43,8 @@ $navbarLogoFontSize: 24px; // NOTE: icon edge length should be a multiple
 $navbarLogoFontWeight: 700;
 $navbarLogoSize: 2em; // NOTE: should be > $navbarLogoFontSize
 
+$deckTransition: 0.5s ease-in-out;
+
 // Transition Effect
 .transtion {
   transition: all 0.3s ease-in-out;
@@ -656,14 +658,14 @@ body {
         width: auto;
         li {
           .product_img {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility $deckTransition, opacity $deckTransition;
 
-            img {
-              transition: opacit;
+            &.active {
+              visibility: visible;
+              opacity: 1;
             }
-          }
-          .product_img.active {
-            display: block;
           }
         }
       }
