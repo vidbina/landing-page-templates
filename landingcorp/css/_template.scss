@@ -657,15 +657,13 @@ body {
         bottom: auto;
         width: auto;
         li {
+          top: 0;
           .product_img {
-            visibility: hidden;
             opacity: 0;
-            transition: visibility $deckTransition, opacity $deckTransition;
-
-            &.active {
-              visibility: visible;
-              opacity: 1;
-            }
+            transition: opacity $deckTransition;
+          }
+          .current {
+            opacity: 1;
           }
         }
       }

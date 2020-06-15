@@ -26,31 +26,21 @@ productMenuItem.forEach((link) => {
 window.addEventListener("scroll", (event) => {
   let fromTop = window.scrollY;
 
-  productMenuItem.forEach((link) => {
-    let section = document.querySelector(link.hash);
-    console.log(section.offsetTop);
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      link.classList.add("current");
-    } else {
-      link.classList.remove("current");
-    }
-  });
-
-  productImageItem.forEach((links) => {
-    let section = document.querySelector(links.hash);
+  let manageCurrentState = (el) => {
+    let section = document.querySelector(el.hash);
 
     if (
       section.offsetTop <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop
     ) {
-      links.classList.add("active");
+      el.classList.add("current");
     } else {
-      links.classList.remove("active");
+      el.classList.remove("current");
     }
-  });
+  };
+
+  productMenuItem.forEach(manageCurrentState);
+  productImageItem.forEach(manageCurrentState);
 });
 
 // let navbarToggler = document.getElementById('navbar_toggler');
