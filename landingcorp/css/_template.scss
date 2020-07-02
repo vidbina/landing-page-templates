@@ -450,13 +450,6 @@ body {
     .single_news {
       padding: 15px 20px 15px 20px;
 
-      &:first-child {
-        padding-top: 30px;
-      }
-      &:last-child {
-        padding-bottom: 30px;
-      }
-
       &:hover {
         background-color: $accentPrimaryColor;
         .highlight {
@@ -1122,6 +1115,13 @@ body {
       display: block;
 
       .single_news {
+        &:first-child {
+          padding-top: 30px;
+        }
+        &:last-child {
+          padding-bottom: 30px;
+        }
+
         &:hover {
           background-color: transparent;
 
