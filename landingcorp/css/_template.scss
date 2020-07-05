@@ -48,6 +48,7 @@ $deckTransition: 0.5s ease-in-out;
 
 @mixin deck-section() {
   min-height: 50vh;
+  max-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -584,6 +585,8 @@ body {
       margin-right: 10vh;
       .product_details_wrapper {
         @include deck-section();
+        min-height: 100vh;
+        max-height: 900px;
         &:not(:last-child) {
           margin-bottom: 25vh;
         }
