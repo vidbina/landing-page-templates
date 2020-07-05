@@ -1,10 +1,13 @@
-# Landing page templates
+# Landing Page Templates
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 This project contains a few layouts of landing pages that have been rewritten
-without copying any content from its originals in to make them usable to you in
-your projects.
+without copying any original content from the reference websites in order to
+render these templates usable without violating copyright.
+
+Hopefully these templates will aid in the quick setup of landing pages for your
+experiments.
 
 ## Colors
 
@@ -22,8 +25,9 @@ your projects.
 The following table lists the landing page templates that are used on some
 sites and the template within this repository that remotely mimics that layout.
 
-| sites           | template                                                                                                |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
+| Reference       | Template                                                                                                |
+|-----------------|---------------------------------------------------------------------------------------------------------|
 | getmagicnow.com | [enchanted template](enchanted) [view](https://vidbina.github.io/landingpage-templates/enchanted)       |
 | bufferapp.com   | [pipeline template](pipeline) [view](https://vidbina.github.io/landingpage-templates/pipeline)          |
 | joinassist.com  | [joinsupport template](joinsupport) [view](https://vidbina.github.io/landingpage-templates/joinsupport) |
+| hashicorp.com   | [landingcorp template](landingcorp) [view](https://vidbina.github.io/landingpage-templates/landingcorp) |
