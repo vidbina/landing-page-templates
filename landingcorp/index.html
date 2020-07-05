@@ -2,12 +2,12 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Landing Page</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icon.png" />
     <!-- Place favicon.ico in the root directory -->
     <title>Landing Page</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
     <link rel="stylesheet" href="./css/main.css" />
 
     <meta name="theme-color" content="#ff5533" />
@@ -37,11 +38,15 @@
 
     <!-- Header Start -->
     <header class="header">
-      <nav class="navbar navbar-expand-xl">
-        <a class="navbar-brand" href="#">Landing Page</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <span class="logo"
+            ><img src="./images/icon-192-black.png" alt="logo"
+          /></span>
+          <span class="wordmark">Landing Page</span>
+        </a>
         <button
           class="navbar-toggler"
-          id="navbar_toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -49,580 +54,426 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa fa-bars"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mega_dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link"
                 href="#"
                 id="product_drop_down"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
+                aria-expanded="true"
               >
                 Products
+                <span>
+                  <svg
+                    fill="#000000"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
+                    ></path>
+                    <path d="M0-.75h24v24H0z" fill="none"></path>
+                  </svg>
+                </span>
               </a>
               <div
-                class="dropdown-menu menu_area"
+                class="dropdown-menu menu_area product_area"
                 aria-labelledby="product_drop_down"
               >
                 <div class="menu_container">
-                  <div class="content_panel">
-                    <div class="content_flex">
-                      <div class="list menu_list">
-                        <h3>First Column</h3>
-                        <a href="" class="item">One</a>
-                        <a href="" class="item">Two</a>
-                        <a href="" class="item">Three</a>
-                        <a href="" class="item">Four</a>
-                        <a href="" class="item">Five</a>
-                        <a href="" class="item">Six</a>
+                  <div class="container content_panel">
+                    <div class="double_content link_content">
+                      <div class="single_content">
+                        <h3 class="link_title">Products</h3>
+                        <ul class="list-inline">
+                          <li>
+                            <a href="#">
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="background-color: red;"
+                              ></svg>
+                              One</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="background-color: red;"
+                              ></svg>
+                              Two</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="background-color: red;"
+                              ></svg>
+                              Three</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="background-color: red;"
+                              ></svg>
+                              Four</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="background-color: red;"
+                              ></svg>
+                              Five</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="background-color: red;"
+                              ></svg>
+                              Six</a
+                            >
+                          </li>
+                        </ul>
                       </div>
-                      <div class="list menu_list">
-                        <h3>Second Column</h3>
-                        <a href="" class="item">Item A on B</a>
-                        <a href="" class="item">Item X Y on Z</a>
-                        <h3 class="pt-5">Second Column (2)</h3>
-                        <a href="" class="item">Item Z</a>
+                      <div class="single_content">
+                        <h3 class="link_title">Enterprise</h3>
+                        <ul class="list-inline">
+                          <li><a href="#">Support</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer_link">
+                        <a href="#" rel="noopener noreferrer" target="_blank"
+                          >Learn our products
+                          <svg
+                            width="14"
+                            height="12"
+                            viewBox="0 0 14 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.675 5.7C13.6 5.625 13.6 5.55 13.525 5.475L9.025 0.975C8.725 0.675 8.275 0.675 7.975 0.975C7.675 1.275 7.675 1.725 7.975 2.025L11.2 5.25H1C0.55 5.25 0.25 5.55 0.25 6C0.25 6.45 0.55 6.75 1 6.75H11.2L7.975 9.975C7.675 10.275 7.675 10.725 7.975 11.025C8.125 11.175 8.35 11.25 8.5 11.25C8.65 11.25 8.875 11.175 9.025 11.025L13.525 6.525C13.6 6.45 13.675 6.375 13.675 6.3C13.75 6.075 13.75 5.925 13.675 5.7Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </a>
                       </div>
                     </div>
-                    <div class="learn_product">
-                      <a href="#"
-                        >learn more about our offerings
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content_band">
-                    <div class="content_band_first item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>An interesting title for this section</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Read document</a>
-                        </div>
+                    <div class="double_content img_content">
+                      <div class="single_content">
+                        <a href="#" class="promo_brand first_brand">
+                          <picture>
+                            <!-- Photo by Christina Morillo from Pexels -->
+                            <img
+                              src="./images/woman-wearing-red-and-black-checkered-blouse-using-macbook-1181472.jpg"
+                              alt="woman wearing red and black checkered blouse using MacBook"
+                            />
+                          </picture>
+                          <div class="content">
+                            <span class="content_title"
+                              >Unlocking the Cloud Operating Model</span
+                            >
+                            <span class="learn_more_text">Learn more</span>
+                          </div>
+                        </a>
                       </div>
-                    </div>
-                    <div class="content_band_last item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>
-                            Discover how to do X on Y.
-                          </h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">View screencasts</a>
-                        </div>
+                      <div class="single_content">
+                        <a href="#" class="promo_brand second_brand">
+                          <picture>
+                            <!-- Photo by Matheus Bertelli from Pexels -->
+                            <img
+                              src="./images/photo-of-people-sitting-on-chairs-3321789.jpg"
+                              alt="people sitting on chairs paying attention to something in front of them"
+                            />
+                          </picture>
+                          <div class="content">
+                            <span class="content_title"
+                              >Unpacking Stack org with landing page</span
+                            >
+                            <span class="learn_more_text">Learn more</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mega_dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link"
                 href="#"
                 id="solution_drop_down"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
+                aria-expanded="true"
               >
                 Solutions
+                <span>
+                  <svg
+                    fill="#000000"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
+                    ></path>
+                    <path d="M0-.75h24v24H0z" fill="none"></path>
+                  </svg>
+                </span>
               </a>
               <div
                 class="dropdown-menu menu_area solution_area"
                 aria-labelledby="solution_drop_down"
               >
                 <div class="menu_container">
-                  <div class="content_panel">
-                    <div class="content_flex">
-                      <div class="list menu_list">
-                        <h3>solutions</h3>
-                        <a href="" class="item">Item One</a>
-                        <a href="" class="item">Item Two</a>
-                        <a href="" class="item">Item Three</a>
+                  <div class="container content_panel">
+                    <div class="double_content link_content">
+                      <div class="single_content">
+                        <h3 class="link_title">Solutions</h3>
+                        <ul class="list-inline">
+                          <li>
+                            <a href="#">Simple solution</a>
+                          </li>
+                          <li>
+                            <a href="#">Pragmatic Solution</a>
+                          </li>
+                          <li>
+                            <a href="#">Complicated Solution</a>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="list menu_list">
-                        <h3>Customer Stories</h3>
-                        <a href="" class="item">Eins</a>
-                        <a href="" class="item">Zwei</a>
-                        <a href="" class="item">Drei</a>
+                      <div class="single_content">
+                        <h3 class="link_title">Customer Stories</h3>
+                        <ul class="list-inline">
+                          <li><a href="#">Landing Page</a></li>
+                          <li><a href="#">Acme Corp.</a></li>
+                          <li><a href="#">Hooli, Inc.</a></li>
+                          <li><a href="#">Circle Company</a></li>
+                          <li><a href="#">SOLARNETS</a></li>
+                        </ul>
                       </div>
-                    </div>
-                    <div class="learn_product">
-                      <a href="#"
-                        >Contact Sales
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content_band">
-                    <div class="content_band_first item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>A title to a document with useful content.</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Read whitepaper</a>
-                        </div>
+                      <div class="footer_link">
+                        <a href="#" rel="noopener noreferrer" target="_blank"
+                          >Talk to our wonderful sales folks
+                          <svg
+                            width="14"
+                            height="12"
+                            viewBox="0 0 14 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.675 5.7C13.6 5.625 13.6 5.55 13.525 5.475L9.025 0.975C8.725 0.675 8.275 0.675 7.975 0.975C7.675 1.275 7.675 1.725 7.975 2.025L11.2 5.25H1C0.55 5.25 0.25 5.55 0.25 6C0.25 6.45 0.55 6.75 1 6.75H11.2L7.975 9.975C7.675 10.275 7.675 10.725 7.975 11.025C8.125 11.175 8.35 11.25 8.5 11.25C8.65 11.25 8.875 11.175 9.025 11.025L13.525 6.525C13.6 6.45 13.675 6.375 13.675 6.3C13.75 6.075 13.75 5.925 13.675 5.7Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </a>
                       </div>
                     </div>
-                    <div class="content_band_last item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>
-                            Discover how to do X on Y and Z.
-                          </h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Follow tutorials</a>
-                        </div>
+                    <div class="double_content img_content">
+                      <div class="single_content">
+                        <a href="#" class="promo_brand first_brand">
+                          <picture>
+                            <!-- Photo by ThisIsEngineering from Pexels -->
+
+                            <img
+                              src="./images/woman-coding-on-computer-3861958.jpg"
+                              alt="woman coding on computer"
+                            />
+                          </picture>
+                          <div class="content">
+                            <span class="content_title"
+                              >Woman coding on computer (ThisIsEngineering from
+                              Pexels)</span
+                            >
+                            <span class="learn_more_text">Learn more</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="single_content">
+                        <a href="#" class="promo_brand second_brand">
+                          <picture>
+                            <!-- Photo by Luis Quintero from Pexels -->
+                            <img
+                              src="./images/people-sitting-on-gang-chairs-2774556.jpg"
+                              alt="people sitting on gang chairs"
+                            />
+                          </picture>
+                          <div class="content">
+                            <span class="content_title"
+                              >People sitting on gang chairs by Luis Quintero
+                              from Pexels</span
+                            >
+                            <span class="learn_more_text">Learn more</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mega_dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link"
                 href="#"
-                id="company_drop_down"
+                id="product_drop_down"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
+                aria-expanded="true"
               >
                 Company
+                <span>
+                  <svg
+                    fill="#000000"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
+                    ></path>
+                    <path d="M0-.75h24v24H0z" fill="none"></path>
+                  </svg>
+                </span>
               </a>
               <div
                 class="dropdown-menu menu_area company_area"
                 aria-labelledby="company_drop_down"
               >
                 <div class="menu_container">
-                  <div class="content_panel">
-                    <div class="content_flex">
-                      <div class="list menu_list">
-                        <h3>company</h3>
-                        <a href="" class="item">About us</a>
-                        <a href="" class="item">Jobs</a>
-                        <a href="" class="item">Our principles</a>
-                        <a href="" class="item">Blog</a>
-                        <a href="" class="item">Press</a>
-                        <a href="" class="item">Contact us</a>
-                      </div>
-                      <div class="list menu_list">
-                        <h3>events</h3>
-                        <a href="" class="item">Conference</a>
-                        <a href="" class="item">Webinars</a>
-                        <a href="" class="item">Workshops</a>
-                        <a href="" class="item">View all events</a>
-                      </div>
-                    </div>
-                    <div class="learn_product">
-                      <a href="#"
-                        >We're hiring
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content_band">
-                    <div class="content_band_first item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>
-                            Come work with us where we much cool stuff with
-                            minimal BS.
-                          </h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">View all open positions</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content_band_last item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>Obtain your Landing Page merch!</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Visit the store</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="partners_drop_down"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Partners
-              </a>
-              <div
-                class="dropdown-menu menu_area partners_area"
-                aria-labelledby="partners_drop_down"
-              >
-                <div class="menu_container">
-                  <div class="content_panel">
-                    <div class="content_flex">
-                      <div class="list menu_list">
-                        <h3>Partners</h3>
-                        <a href="" class="item">Ecosystem</a>
-                        <a href="" class="item">Developers</a>
-                        <a href="" class="item">Resellers</a>
-                        <a href="" class="item">Users</a>
-                        <a href="" class="item">R&amp;D Partners</a>
-                      </div>
-                      <div class="list menu_list">
-                        <h3>Integrations</h3>
-                        <a href="" class="item">Cloud</a>
-                        <a href="" class="item">Technology</a>
-                      </div>
-                    </div>
-                    <div class="learn_product">
-                      <a href="#" class="mr-3"
-                        >Find a partner
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#"
-                        >Become a partner
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content_band">
-                    <div class="content_band_first item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>
-                            Title One
-                          </h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Learn more</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content_band_last item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>Title Two with Some Extra Words</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Also more</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="container content_panel">
+                    This is the Company drop-down, See Products and Solutions
+                    drop-downs for examples.
                   </div>
                 </div>
               </div>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mega_dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link"
                 href="#"
-                id="learn_drop_down"
+                id="product_drop_down"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
+                aria-expanded="true"
               >
-                learn
+                Learn
+                <span>
+                  <svg
+                    fill="#000000"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
+                    ></path>
+                    <path d="M0-.75h24v24H0z" fill="none"></path>
+                  </svg>
+                </span>
               </a>
               <div
                 class="dropdown-menu menu_area learn_area"
                 aria-labelledby="learn_drop_down"
               >
                 <div class="menu_container">
-                  <div class="content_panel">
-                    <div class="content_flex">
-                      <div class="list menu_list">
-                        <h3>Learn</h3>
-                        <a href="" class="item">Product Guides</a>
-                        <a href="" class="item">Resource Library</a>
-                        <a href="" class="item">Blog</a>
-                        <a href="" class="item">Training</a>
-                      </div>
-                      <div class="list menu_list">
-                        <h3>Docs</h3>
-                        <a href="" class="item">One</a>
-                        <a href="" class="item">Two</a>
-                        <a href="" class="item">Three</a>
-                        <a href="" class="item">Four</a>
-                        <a href="" class="item">Five</a>
-                        <a href="" class="item">Six</a>
-                      </div>
-                      <div class="list menu_list">
-                        <h3>Community</h3>
-                        <a href="" class="item">Overview</a>
-                        <a href="" class="item">Forum</a>
-                        <a href="" class="item">User Groups</a>
-                      </div>
-                    </div>
-                    <div class="learn_product">
-                      <a href="#" class="mr-3"
-                        >More
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content_band">
-                    <div class="content_band_last item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>Super Interesting Thing 1</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Register Now</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="container content_panel">
+                    This is the Learn drop-down, see Products and Solutions
+                    drop-downs for examples.
                   </div>
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mega_dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link"
                 href="#"
-                id="success_area"
+                id="product_drop_down"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
+                aria-expanded="true"
               >
-                Success & Support
+                Success &amp; Support
+                <span>
+                  <svg
+                    fill="#000000"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
+                    ></path>
+                    <path d="M0-.75h24v24H0z" fill="none"></path>
+                  </svg>
+                </span>
               </a>
               <div
                 class="dropdown-menu menu_area success_area"
                 aria-labelledby="learn_drop_down"
               >
                 <div class="menu_container">
-                  <div class="content_panel">
-                    <div class="content_flex">
-                      <div class="list menu_list">
-                        <h3>Customer Success</h3>
-                        <a href="" class="item">Overview</a>
-                        <a href="" class="item">Section 1</a>
-                        <a href="" class="item">2nd Section</a>
-                        <a href="" class="item">Third Section</a>
-                      </div>
-                      <div class="list menu_list">
-                        <h3>Support</h3>
-                        <a href="" class="item">Support Portal</a>
-                        <a href="" class="item">Submit A Ticket</a>
-                        <a href="" class="item">System Status</a>
-                      </div>
-                    </div>
-                    <div class="learn_product">
-                      <a href="#" class="mr-3"
-                        >Contact Us
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#" class="mr-3"
-                        >Compare Plans
-                        <svg
-                          class="bi bi-arrow-right"
-                          width="1em"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                            clip-rule="evenodd"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="content_band">
-                    <div class="content_band_last item_band">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>Blah Blah A</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Register Now</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content_band_last item_band ml-4">
-                      <div class="image"></div>
-                      <div class="info">
-                        <div class="title">
-                          <h3>Blah Blah B</h3>
-                        </div>
-                        <div class="link">
-                          <a href="#">Register Now</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="container content_panel">
+                    This is the Success drop-down, see Products and Solutions
+                    drop-downs for examples.
                   </div>
                 </div>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pricing">
               <a class="nav-link price_btn" href="#">Get pricing</a>
             </li>
           </ul>
@@ -632,7 +483,7 @@
     <!-- Header End -->
 
     <!-- Slider Section Start -->
-    <section class="slider_section">
+    <section id="demo_request" class="slider_section">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
@@ -644,8 +495,13 @@
                 solution entails.
               </p>
               <div class="search_wrapper">
-                <input type="text" placeholder="Work Email Address" />
-                <button>Request a Demo</button>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Work Email Address"
+                  required
+                />
+                <input type="submit" value="Request Demo" />
               </div>
               <a class="sales_team_link" href="#">
                 Speak with our sales team
@@ -676,62 +532,80 @@
     </section>
     <!-- End of Slider Section -->
 
-    <!-- Start News Section -->
+    <!-- Start of News Section -->
     <section class="news_section">
-      <div class="container">
-        <ol class="list-inline mb-0 news_section_container">
-          <li class="single_news transtion">
-            <span class="highlight">April 1</span>
-            <h3>
-              Visit our stand at April Fools Tech Conf
-            </h3>
-            <p>Visit Conference Website</p>
-          </li>
-          <li class="single_news transtion">
-            <span class="highlight">Announcement</span>
-            <h3>
-              Lupita Foo joins Landing Page as the new CEO.
-            </h3>
-            <p>Learn More</p>
-          </li>
-          <li class="single_news transtion">
-            <span class="highlight">Available now</span>
-            <h3>
-              Early access for our new Zeta service for startups
-            </h3>
-            <p>Start Trial</p>
-          </li>
-        </ol>
+      <div class="container news_section_container">
+        <div class="row">
+          <div class="col-md-4 single_news transition">
+            <span class="highlight">Live</span>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipis</h3>
+            <a href="#" class="news_register">Register Now</a>
+          </div>
+          <div class="col-md-4 single_news transition">
+            <span class="highlight">Announcing</span>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipis</h3>
+            <a href="#" class="news_register">Register Now</a>
+          </div>
+          <div class="col-md-4 single_news transition">
+            <span class="highlight">Webinar</span>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipis</h3>
+            <a href="#" class="news_register">Register Now</a>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End of News Section -->
 
-    <!-- Start of Trusted Section -->
+    <!-- Start of Trusted Logo -->
     <section class="trusted_logo">
       <div class="container">
-        <ol class="list-inline mb-0 logo_list">
-          <li class="single_logo">
-            <img src="./images/logo-triangle.svg" alt="" />
+        <ol class="list_logo list-inline">
+          <li>
+            <img
+              src="./images/logo-triangle.svg"
+              class="single_logo"
+              alt="Logo"
+            />
           </li>
-          <li class="single_logo">
-            <img src="./images/logo-circleco.svg" alt="" />
+          <li>
+            <img
+              src="./images/logo-circleco.svg"
+              class="single_logo"
+              alt="Logo"
+            />
           </li>
-          <li class="single_logo">
-            <img src="./images/logo-hooli.svg" alt="" />
+          <li>
+            <img
+              src="./images/logo-innov8tor.svg"
+              class="single_logo"
+              alt="Logo"
+            />
           </li>
-          <li class="single_logo">
-            <img src="./images/logo-solarnets.svg" alt="" />
+          <li>
+            <img
+              src="./images/logo-solarnets.svg"
+              class="single_logo"
+              alt="Logo"
+            />
           </li>
-          <li class="single_logo">
-            <img src="./images/logo-innov8tor.svg" alt="" />
+          <li>
+            <img
+              src="./images/logo-acmeindustries.svg"
+              class="single_logo"
+              alt="Logo"
+            />
           </li>
-          <li class="single_logo">
-            <img src="./images/logo-acmeindustries.svg" alt="" />
+          <li>
+            <img
+              src="./images/logo-triangle.svg"
+              class="single_logo"
+              alt="Logo"
+            />
           </li>
         </ol>
       </div>
     </section>
-    <!-- End of Trusted Section -->
+    <!-- End of Trusted Logo -->
 
     <!-- Start Of Solution Section -->
     <section class="solution_section">
@@ -748,10 +622,10 @@
                 language simple and try to get to the point. More than three
                 lines of conveniently readable text are probably overkill.
               </p>
-              <a href="#" class="heading_link transtion"
+              <a href="#" class="heading_link transition"
                 >Learn More
                 <svg
-                  class="bi bi-arrow-right transtion"
+                  class="bi bi-arrow-right transition"
                   width="1em"
                   height="1em"
                   viewBox="0 0 16 16"
@@ -774,25 +648,24 @@
           </div>
         </div>
         <!-- End Of Section Heading -->
-
-        <ol class="list-inline mb-0 row">
-          <li class="col-lg-6 col-sm-12">
-            <a href="" class="mb-4">
-              <div class="single_solution transtion">
+        <ol class="list-inline">
+          <li>
+            <a href="#">
+              <div class="single_solution transition mb-3">
                 <div class="icon">
                   <img src="./images/icon-network.svg" alt="" />
                 </div>
                 <div class="body">
-                  <h3><strong>Network</strong> icon</h3>
+                  <h3><strong>Network</strong> cybernation</h3>
                   <p>
                     The network icon would be appropriately used here if
                     networking represent a core aspect that is addressed by our
                     solution offering.
                   </p>
-                  <span class="transtion"
+                  <span class="transition"
                     >More about Networking
                     <svg
-                      class="bi bi-arrow-right transtion"
+                      class="bi bi-arrow-right transition"
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
@@ -815,24 +688,23 @@
               </div>
             </a>
           </li>
-          <!--End Of col-sm-6-->
-          <li class="col-lg-6 col-sm-12">
-            <a href="#" class="mb-4">
-              <div class="single_solution transtion">
+          <li>
+            <a href="#">
+              <div class="single_solution transition mb-3">
                 <div class="icon">
                   <img src="./images/icon-windows.svg" alt="" />
                 </div>
                 <div class="body">
-                  <h3><strong>Windows</strong> icon</h3>
+                  <h3><strong>Windows</strong> cybernation</h3>
                   <p>
                     These blocks are meant to discuss features or benefits that
                     users would be able to leverage by using the provided
                     service or product.
                   </p>
-                  <span class="transtion"
+                  <span class="transition"
                     >Explore more
                     <svg
-                      class="bi bi-arrow-right transtion"
+                      class="bi bi-arrow-right transition"
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
@@ -855,25 +727,23 @@
               </div>
             </a>
           </li>
-          <!--End Of col-sm-6-->
-
-          <li class="col-lg-6 col-sm-12">
-            <a href="#" class="mb-4">
-              <div class="single_solution transtion">
+          <li>
+            <a href="#">
+              <div class="single_solution transition mb-3">
                 <div class="icon">
-                  <img src="./images/icon-robot.svg" alt="" />
+                  <img src="./images/icon-robot.svg" alt="robot" />
                 </div>
                 <div class="body">
-                  <h3><strong>Robot</strong> icon</h3>
+                  <h3><strong>Robot</strong> cybernation</h3>
                   <p>
                     If we offered something by way of robotic solutions or
-                    automation tooling, we would talk about its benefits in this
-                    section.
+                    cybernation tooling, we would talk about its benefits in
+                    this section.
                   </p>
-                  <span class="transtion"
-                    >Explore automation
+                  <span class="transition"
+                    >Explore cybernation
                     <svg
-                      class="bi bi-arrow-right transtion"
+                      class="bi bi-arrow-right transition"
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
@@ -896,25 +766,23 @@
               </div>
             </a>
           </li>
-          <!--End Of col-sm-6-->
-
-          <li class="col-lg-6 col-sm-12">
-            <a href="#" class="mb-4">
-              <div class="single_solution transtio">
+          <li>
+            <a href="#">
+              <div class="single_solution transition mb-3">
                 <div class="icon">
                   <img src="./images/icon-shield.svg" alt="" />
                 </div>
                 <div class="body">
-                  <h3><strong>Shield</strong> icon</h3>
+                  <h3><strong>Shield</strong> cybernation</h3>
                   <p>
-                    We could say something meaningful about security in this
-                    section, or change the icon and title and talk about a more
-                    relevant topic altogether.
+                    If we offered something by way of robotic solutions or
+                    cybernation tooling, we would talk about its benefits in
+                    this section.
                   </p>
-                  <span class="transtion"
+                  <span class="transition"
                     >More about Security
                     <svg
-                      class="bi bi-arrow-right transtion"
+                      class="bi bi-arrow-right transition"
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
@@ -937,7 +805,6 @@
               </div>
             </a>
           </li>
-          <!--End Of col-sm-6-->
         </ol>
       </div>
     </section>
@@ -948,7 +815,7 @@
       <div class="container">
         <!-- Start of Section Heading -->
         <div class="row">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
             <div class="section_header_wrapper text-center">
               <h2 class="heading_title">
                 Our products
@@ -962,30 +829,36 @@
         </div>
         <!-- End Of Section Heading -->
 
-        <div class="product_area">
-          <div class="product_list">
-            <ul class="list-inline mb-0">
-              <li class="product_menu_item">
-                <a href="#deck-0" class="deck-1 current">start</a>
+        <!-- Start of Product Area -->
+        <div class="product_section_area">
+          <div class="deck_menu_list">
+            <ul class="list-inline">
+              <li class="deck_menu_item">
+                <a href="#overview" id="overview-link">Overview</a>
               </li>
-              <li class="product_menu_item">
-                <a href="#deck-1" class="deck-1">one</a>
+              <li class="deck_menu_item">
+                <a href="#provision" id="provision-link">Top</a>
               </li>
-              <li class="product_menu_item">
-                <a href="#deck-2" class="deck-2">two</a>
+              <li class="deck_menu_item">
+                <a href="#secure" id="secure-link">Second</a>
               </li>
-              <li class="product_menu_item">
-                <a href="#deck-3" class="deck-3">three</a>
+              <li class="deck_menu_item">
+                <a href="#connect" id="connect-link">Third</a>
               </li>
-              <li class="product_menu_item">
-                <a href="#deck-4" class="deck-4">four</a>
+              <li class="deck_menu_item">
+                <a href="#run" id="run-link">Bottom</a>
               </li>
             </ul>
           </div>
-          <div class="product_details_area">
-            <section id="deck-0" class="product_details_wrapper">
+
+          <div class="deck_text">
+            <section
+              id="overview"
+              class="product_details_wrapper"
+              data-appear-left-offset="1600"
+            >
               <div class="product_details">
-                <h3>The Landing Page Stack</h3>
+                <h3>Landing Stack</h3>
                 <p>
                   If the concept of a stack is relevant to your particular case,
                   please go ahead and provide a summary of why addressing the
@@ -993,7 +866,11 @@
                 </p>
               </div>
             </section>
-            <section id="deck-1" class="product_details_wrapper">
+            <section
+              id="provision"
+              class="product_details_wrapper"
+              data-appear-left-offset="1600"
+            >
               <div class="product_details">
                 <h3>One</h3>
                 <p>
@@ -1005,7 +882,7 @@
                     <a href="#"
                       >Product Feature A
                       <svg
-                        class="bi bi-arrow-right transtion"
+                        class="bi bi-arrow-right transition"
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
@@ -1029,7 +906,7 @@
                     <a href="#"
                       >Product Feature B
                       <svg
-                        class="bi bi-arrow-right transtion"
+                        class="bi bi-arrow-right transition"
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
@@ -1060,7 +937,11 @@
                 </ul>
               </div>
             </section>
-            <section id="deck-2" class="product_details_wrapper">
+            <section
+              id="secure"
+              class="product_details_wrapper"
+              data-appear-left-offset="1600"
+            >
               <div class="product_details">
                 <h3>Two</h3>
                 <p>
@@ -1073,7 +954,7 @@
                     <a href="#"
                       >Product Feature A
                       <svg
-                        class="bi bi-arrow-right transtion"
+                        class="bi bi-arrow-right transition"
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
@@ -1097,7 +978,7 @@
                     <a href="#">
                       Product Feature B
                       <svg
-                        class="bi bi-arrow-right transtion"
+                        class="bi bi-arrow-right transition"
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
@@ -1128,7 +1009,11 @@
                 </ul>
               </div>
             </section>
-            <section id="deck-3" class="product_details_wrapper">
+            <section
+              id="connect"
+              class="product_details_wrapper"
+              data-appear-left-offset="1600"
+            >
               <div class="product_details">
                 <h3>Three</h3>
                 <p>
@@ -1140,7 +1025,7 @@
                     <a href="#"
                       >Configurability
                       <svg
-                        class="bi bi-arrow-right transtion"
+                        class="bi bi-arrow-right transition"
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
@@ -1164,7 +1049,7 @@
                     <a href="#">
                       Portability
                       <svg
-                        class="bi bi-arrow-right transtion"
+                        class="bi bi-arrow-right transition"
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
@@ -1195,7 +1080,11 @@
                 </ul>
               </div>
             </section>
-            <section id="deck-4" class="product_details_wrapper">
+            <section
+              id="run"
+              class="product_details_wrapper"
+              data-appear-left-offset="1600"
+            >
               <div class="product_details">
                 <h3>Four</h3>
                 <p>
@@ -1213,314 +1102,16 @@
               </div>
             </section>
           </div>
-          <div class="product_img_list">
-            <ul class="list-inline mb-0">
-              <li>
-                <a href="#deck-0" class="product_img active">
-                  <img src="./images/stack.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#deck-1" class="product_img">
-                  <img src="./images/stack-0.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#deck-2" class="product_img">
-                  <img src="./images/stack-1.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#deck-3" class="product_img">
-                  <img src="./images/stack-2.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#deck-4" class="product_img">
-                  <img src="./images/stack-3.png" alt="" />
-                </a>
+          <div class="deck_image_list">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <div class="product_img">
+                  <img src="./images/stack.svg" alt="stack" />
+                </div>
               </li>
             </ul>
           </div>
         </div>
-
-        <!-- Start of Product Area -->
-        <!-- <div class="product_section_area">
-          <ul class="product_menu_list list-inline">
-            <li class="product_menu_item">
-              <a href="#overview">Overview</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#provision">Top</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#secure">Second</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#connect">Third</a>
-            </li>
-            <li class="product_menu_item">
-              <a href="#run">Bottom</a>
-            </li>
-          </ul>
-          <div class="product_details_area">
-            <section id="overview" class="product_details_wrapper">
-              <div class="product_details">
-                <h3>The Landing Page Stack</h3>
-                <p>
-                  If the concept of a stack is relevant to your particular case,
-                  please go ahead and provide a summary of why addressing the
-                  individual components or abstraction levels is relevant.
-                </p>
-              </div>
-              
-            </section>
-            <section id="provision" class="product_details_wrapper">
-              <div class="product_details">
-                <h3>One</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <ul class="list-inline">
-                  <li>
-                    <a href="#"
-                      >Product Feature A
-                      <svg
-                        class="bi bi-arrow-right transtion"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      >Product Feature B
-                      <svg
-                        class="bi bi-arrow-right transtion"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="list-inline">
-                  <li>
-                    <a href="#">Learn more</a>
-                  </li>
-                  <li>
-                    <a href="#">Get started</a>
-                  </li>
-                </ul>
-              </div>
-              
-            </section>
-            <section id="secure" class="product_details_wrapper">
-              <div class="product_details">
-                <h3>Two</h3>
-                <p>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-
-                <ul class="list-inline">
-                  <li>
-                    <a href="#"
-                      >Product Feature A
-                      <svg
-                        class="bi bi-arrow-right transtion"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Product Feature B
-                      <svg
-                        class="bi bi-arrow-right transtion"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="list-inline">
-                  <li>
-                    <a href="#">Learn more</a>
-                  </li>
-                  <li>
-                    <a href="#">Get started</a>
-                  </li>
-                </ul>
-              </div>
-              
-            </section>
-            <section id="deck-3" class="product_details_wrapper">
-              <div class="product_details">
-                <h3>Three</h3>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
-                </p>
-                <ul class="list-inline">
-                  <li>
-                    <a href="#"
-                      >Configurability
-                      <svg
-                        class="bi bi-arrow-right transtion"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Portability
-                      <svg
-                        class="bi bi-arrow-right transtion"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="list-inline">
-                  <li>
-                    <a href="#">Learn more</a>
-                  </li>
-                  <li>
-                    <a href="#">Get started</a>
-                  </li>
-                </ul>
-              </div>
-              
-            </section>
-            <section id="deck-4" class="product_details_wrapper">
-              <div class="product_details">
-                <h3>Four</h3>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
-                </p>
-                <ul class="list-inline">
-                  <li>
-                    <a href="#">Learn more</a>
-                  </li>
-                  <li>
-                    <a href="#">Get started</a>
-                  </li>
-                </ul>
-              </div>
-              
-            </section>
-          </div>
-          <div class="product_img_list">
-            <div class="product_img">
-              <img src="./images/stack.png" alt="" />
-            </div>
-
-            <div class="product_img">
-              <img src="./images/stack-0.png" alt="" />
-            </div>
-
-            <div class="product_img">
-              <img src="./images/stack-1.png" alt="" />
-            </div>
-
-            <div class="product_img">
-              <img src="./images/stack-2.png" alt="" />
-            </div>
-
-            <div class="product_img">
-              <img src="./images/stack-3.png" alt="" />
-            </div>
-          </div>
-        </div> -->
         <!-- End of Product Area -->
       </div>
     </section>
@@ -1530,21 +1121,18 @@
     <section class="integrations_section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="section_header_wrapper integration_left_info">
-              <h2 class="heading_title">
-                Provide a punchy one-liner
-              </h2>
-              <p class="heading_desc">
+          <div class="col-lg-4 col-sm-12">
+            <div class="integration_left_info">
+              <h3>Provide a punchy one-liner</h3>
+              <p>
                 This is where one describes the one-liner in more detail. If the
                 one-liner is about integrations, talk about why those
-                integrations are supported. Focus on what the benefit to the
-                end-user is.
+                integrations are supported.
               </p>
-              <a href="#" class="heading_link transtion"
-                >Explore
+              <a href="#"
+                >Explore all integrations
                 <svg
-                  class="bi bi-arrow-right transtion"
+                  class="bi bi-arrow-right transition"
                   width="1em"
                   height="1em"
                   viewBox="0 0 16 16"
@@ -1565,78 +1153,91 @@
               </a>
             </div>
           </div>
-
-          <div class="col-lg-8 col-md-12 col-sm-12">
-            <ul class="integration_logo_list list-inline mb-0">
+          <div class="col-lg-8 col-sm-12">
+            <ul class="integration_logo_list">
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-sat.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-sat.png" alt="" />
+                  </a>
+                </div>
               </li>
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-1nezer0.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-1nezer0.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-a2z.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-a2z.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-sat.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-sat.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-1nezer0.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-1nezer0.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-a2z.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-a2z.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-sat.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-sat.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-1nezer0.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-1nezer0.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-a2z.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-a2z.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-sat.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-sat.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-1nezer0.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-1nezer0.png" alt="" />
+                  </a>
+                </div>
               </li>
-
               <li class="integration_logo">
-                <a href="#" class="logo">
-                  <img src="./images/highlights-a2z.png" alt="" />
-                </a>
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/highlights-a2z.png" alt="" />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -1649,20 +1250,20 @@
     <section class="call_to_action_section">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3 col-sm-4">
             <div class="call_to_action_title">
               <h3>Ready to get started?</h3>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9 col-sm-8">
             <div class="call_to_action_info">
               <p>
                 Request a demo or talk to a solutions consultant to explore
                 options to address your problems.
               </p>
               <div class="content_and_link">
-                <a href="#" class="sale_btn">Contact Sales</a>
-                <a href="#" class="demo">Request Demo</a>
+                <a href="#" class="cta" type="button">Contact Marketing</a>
+                <a href="#" type="button">Request Demo</a>
               </div>
             </div>
           </div>
@@ -1679,56 +1280,28 @@
           <div class="row">
             <div class="col-md-12">
               <div class="newsletter_info">
-                <form action="">
-                  <input
-                    type="text"
-                    class="from-control"
-                    placeholder="Email Address"
-                  />
-                  <button>Subscribe to Newsletter</button>
-                  <div class="form-check">
+                <form action="#" class="form_area" method="post">
+                  <div>
                     <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
+                      type="text"
+                      class="from-control"
+                      placeholder="Email Address"
                     />
-                    <label class="form-check-label" for="defaultCheck1">
-                      I agree to the <a href="#">Privacy Policy</a>
-                    </label>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck"
+                      />
+                      <label class="form-check-label" for="defaultCheck">
+                        I agree to the <a href="#">Privacy Policy</a>
+                      </label>
+                    </div>
                   </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of newsletter -->
-
-      <!-- Start of newsletter -->
-      <div class="newsletter_wrapper newsletter_wrapper_mobile">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="newsletter_info">
-                <form action="">
-                  <input
-                    type="text"
-                    class="from-control"
-                    placeholder="Email Address"
-                  />
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      I agree to the <a href="#">Privacy Policy</a>
-                    </label>
-                  </div>
-                  <button>Subscribe to Newsletter</button>
+                  <button class="newsletter_btn" type="button">
+                    Subscribe to Newsletter
+                  </button>
                 </form>
               </div>
             </div>
@@ -1761,6 +1334,21 @@
                     <li class="list-inline-item">
                       <a href="#">
                         <i class="fa fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-tumblr"></i>
                       </a>
                     </li>
                   </ul>
@@ -1903,15 +1491,16 @@
     </footer>
     <!-- End of Footer Section -->
 
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="./js/vendor/jquery-3.4.1.min.js"><\/script>'
-        );
-    </script>
+    <script src="./js/vendor/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/vendor/bootstrap.min.js"></script>
     <script src="./js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="./js/plugins.js"></script>
+    <script src="./js/vendor/jquery.appear.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,76 +1,122 @@
-let productMenuItem = document.querySelectorAll(
-  ".product_list ul .product_menu_item a"
-);
-let productImageItem = document.querySelectorAll(
-  ".product_area .product_img_list ul li a"
-);
+// smooth scroll to all anchor links
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on("click", function (event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-let productDetails = document.querySelectorAll(
-  ".product_section .product_details"
-);
-let productMenuList = document.querySelector(".product_list ul");
-let lastId;
-let cur = [];
+      // Store hash
+      var hash = this.hash;
 
-productMenuItem.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    let target = document.querySelector(event.target.hash);
-    target.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        }
+      );
+    } // End if
   });
 });
 
-window.addEventListener("scroll", (event) => {
-  const setCurrent = (index, arr) => {
-    // TODO: Profile
-    arr.forEach((el, idx) => {
-      if (idx == index) {
-        el.classList.add("current");
-      } else {
-        el.classList.remove("current");
-      }
-    });
-  };
-
-  const manageCurrentState = (el, idx, arr) => {
-    const section = document.querySelector(el.hash);
-    const delta = window.scrollY - section.offsetTop;
-
-    if (delta + section.offsetHeight > 0) {
-      // Ensure that el is scrolled into view (delta > 0) and that
-      setCurrent(idx, arr);
-    }
-  };
-
-  productMenuItem.forEach(manageCurrentState);
-  productImageItem.forEach(manageCurrentState);
+// mega menu
+jQuery(document).on("click", ".mega-dropdown", function (e) {
+  e.stopPropagation();
 });
 
-// let navbarToggler = document.getElementById('navbar_toggler');
+/**
+ * Image Apear Based On Viewport
+ */
+$(function () {
+  // Execute the viewport for a element
+  $(".deck_text section").appear();
 
-// Navbar Link
-// let overviewLink = document.querySelector('.overviewLink');
-// let provisionLink = document.querySelector('.provisionLink');
-// let secureLink = document.querySelector('.secureLink');
-// let connectLink = document.querySelector('.connectLink');
-// let runLink = document.querySelector('.runLink');
+  // Force execute after click the navigation
+  $(".deck_menu_list .list-inline .deck_menu_item a").on("click", function () {
+    $.force_appear();
+  });
 
-// // Section List
-// let overview = document.getElementById('overview');
-// let provision = document.getElementById('provision');
-// let secure = document.getElementById('secure');
-// let connect = document.getElementById('connect');
-// let run = document.getElementById('run');
+  // Force execute after reload the browser
+  $(document.body).ready(function () {
+    $.force_appear();
+  });
 
-// let productSection = document.getElementsByClassName('product_section');
+  // TODO: Refactor to be less explicit, can't expect end-user to edit JS
 
-// let overviewOffset = overview.offsetTop;
+  // Effect for a element
+  $(document.body).on("appear", "#overview", function (e, $affected) {
+    // Set the image
+    $(".deck_image_list .product_img img").attr("src", "images/stack-0.png");
 
-// window.addEventListener('scroll', function () {
-// 	let isTop = window.scrollY < 100;
+    // Remove previous active class
+    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
 
-// 	console.log(isTop);
-// });
+    // Set active class for current nav
+    $(".deck_menu_list .list-inline .deck_menu_item a#overview-link").addClass(
+      "active"
+    );
+  });
+
+  // Effect for a element
+  $(document.body).on("appear", "#provision", function (e, $affected) {
+    // Set the image
+    $(".deck_image_list .product_img img").attr("src", "images/stack-1.png");
+
+    // Remove previous active class
+    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
+
+    // Set active class for current nav
+    $(".deck_menu_list .list-inline .deck_menu_item a#provision-link").addClass(
+      "active"
+    );
+  });
+
+  // Effect for a element
+  $(document.body).on("appear", "#secure", function (e, $affected) {
+    // Set the image
+    $(".deck_image_list .product_img img").attr("src", "images/stack-2.png");
+
+    // Remove previous active class
+    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
+
+    // Set active class for current nav
+    $(".deck_menu_list .list-inline .deck_menu_item a#secure-link").addClass(
+      "active"
+    );
+  });
+
+  // Effect for a element
+  $(document.body).on("appear", "#connect", function (e, $affected) {
+    // Set the image
+    $(".deck_image_list .product_img img").attr("src", "images/stack-3.png");
+
+    // Remove previous active class
+    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
+
+    // Set active class for current nav
+    $(".deck_menu_list .list-inline .deck_menu_item a#connect-link").addClass(
+      "active"
+    );
+  });
+
+  // Effect for a element
+  $(document.body).on("appear", "#run", function (e, $affected) {
+    // Set the image
+    $(".deck_image_list .product_img img").attr("src", "images/stack-0.png");
+
+    // Remove previous active class
+    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
+
+    // Set active class for current nav
+    $(".deck_menu_list .list-inline .deck_menu_item a#run-link").addClass(
+      "active"
+    );
+  });
+});
