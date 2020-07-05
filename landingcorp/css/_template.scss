@@ -40,8 +40,7 @@ $extraSmallSize: 0.6rem;
 $buttonHeight: 50px;
 
 // Navbar Logo
-$navbarLogo: url("/images/icon-192-black.png");
-$navbarLogoFontSize: 24px; // NOTE: icon edge length should be a multiple
+$navbarLogoFontSize: 1.25rem; // NOTE: icon edge length should be a multiple
 $navbarLogoFontWeight: 700;
 $navbarLogoSize: 2em; // NOTE: should be > $navbarLogoFontSize
 
@@ -131,12 +130,13 @@ body {
       font-weight: $navbarLogoFontWeight;
       font-size: $navbarLogoFontSize;
       margin-right: 0;
-      color: $accentPrimaryColor;
+
       .logo {
         display: inline-block;
+        line-height: 0;
         img {
-          height: 1.5em;
-          width: 1.5em;
+          height: $navbarLogoFontSize;
+          width: $navbarLogoFontSize;
         }
       }
       .wordmark {
