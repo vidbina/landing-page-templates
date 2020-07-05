@@ -31,3 +31,14 @@ sites and the template within this repository that remotely mimics that layout.
 | bufferapp.com   | [pipeline template](pipeline) [view](https://vidbina.github.io/landingpage-templates/pipeline)          |
 | joinassist.com  | [joinsupport template](joinsupport) [view](https://vidbina.github.io/landingpage-templates/joinsupport) |
 | hashicorp.com   | [landingcorp template](landingcorp) [view](https://vidbina.github.io/landingpage-templates/landingcorp) |
+
+## Checklist
+
+The following steps provide some guidance about the steps to be taken in using
+one of the provided [templates](#templates):
+
+- [ ] Modify index.html to contain your copy
+- [ ] Modify main.scss to reflect your colors and use the values in the [colors
+  table](#colors) to search for the used colors and replace them to your liking
+- [ ] Update favicon.ico and icon.png
+- [ ] Update site.manifest to at least define `name` and `short_name`

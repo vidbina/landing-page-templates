@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
 const httpServer = require("http-server");
+const path = require("path");
 
 if (process.argv.length < 3) {
   console.error("Missing folder");
@@ -22,7 +23,9 @@ const outputs = [
 ];
 
 (async () => {
-  const server = await httpServer.createServer();
+  const server = await httpServer.createServer({
+    root: path.join(__dirname, folder),
+  });
   server.listen(port);
 
   const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
@@ -31,7 +34,7 @@ const outputs = [
     outputs.map(async (output) => {
       const page = await browser.newPage();
       await page.setViewport(output.viewport);
-      await page.goto(`http://${host}/${folder}/index.html`);
+      await page.goto(`http://${host}/index.html`);
       await page.screenshot({
         fullPage: true,
         path: `${folder}/preview-${output.filenamePostfix}.png`,

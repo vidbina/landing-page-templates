@@ -4,8 +4,10 @@
   "description": "Plain HTML+CSS templates of landing pages in the wild",
   "main": "index.js",
   "scripts": {
+    "fmt": "npx prettier --write .",
     "capture": "node capture.js",
-    "test": "npx prettier -c ."
+    "dev": "dev() { npx http-server $1 & npx node-sass -w $1/css -o $1/css; }; dev",
+    "test": "npx prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,9 @@
     "url": "https://github.com/vidbina/landing-page-templates/issues"
   },
   "homepage": "https://github.com/vidbina/landing-page-templates#readme",
-  "dependencies": {},
+  "dependencies": {
+    "html5-boilerplate": "^7.3.0"
+  },
   "devDependencies": {
     "http-server": "^0.12.1",
     "node-sass": "^4.13.1",

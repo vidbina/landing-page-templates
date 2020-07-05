@@ -30,8 +30,6 @@ SCREENSHOT_IPHONE7_HEIGHT := 667
 # declaring those variables in the project.mk file which is conditionally
 # included after variable declaration in this Makefile.
 
-# <<<<<<<<<<<<<<<<<<<<<<<
-
 # Path to the shippable part of your application
 # The shippable part of your application should contain manifest files
 # (requirements.txt in case of pip, pyproject.toml and poetry.lock in case of
@@ -46,7 +44,7 @@ APP_VERSION ?= 0.1.0
 APP_NAME ?= landing-page-templates
 
 # Ports of the application to expose
-APP_PORTS ?= 8000/tcp
+APP_PORT ?= 8080/tcp
 
 # Version for the base Node.js Docker image
 # The notation of the version should match the semver notation for which there
@@ -91,7 +89,7 @@ DOCKER_CONTAINER_BASE_IMAGE = ${DOCKER_NODEJS_IMAGE}
 DOCKER_CONTAINER_HOME_PATH = /home/developer
 
 # Ports of the container to expose
-DOCKER_CONTAINER_PORTS = ${APP_PORTS}
+DOCKER_CONTAINER_PORTS = ${APP_PORT}
 
 
 # Docker host parameters
@@ -141,8 +139,10 @@ DOCKER_BUILD_ARGS = \
 # - Mounts volumes (-v)
 # - Sets working directory (-w)
 DOCKER_ARGS = \
-	-e "PROJECT=${PROJECT}" \
+	--name ${APP_NAME} \
 	-e "HOME=${DOCKER_CONTAINER_HOME_PATH}" \
+	-e "PROJECT=${PROJECT}" \
+	-p 127.0.0.1:8080:${APP_PORT} \
 	-u `id -u`:`id -g` \
 	-v ${DOCKER_HOST_PROJECT_PATH}/.homedir:${DOCKER_CONTAINER_HOME_PATH} \
 	-v `realpath ${APP_PATH}`:/tmp/${PROJECT} \
