@@ -34,6 +34,7 @@
     "http-server": "^0.12.3",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.4",
-    "puppeteer": "^3.0.0"
+    "puppeteer": "^3.0.0",
+    "puppeteer-full-page-screenshot": "^1.0.5"
   }
 }
