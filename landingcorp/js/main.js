@@ -48,75 +48,23 @@ $(function () {
     $.force_appear();
   });
 
-  // TODO: Refactor to be less explicit, can't expect end-user to edit JS
+  const sections = $("li.deck_menu_item a");
 
-  // Effect for a element
-  $(document.body).on("appear", "#overview", function (e, $affected) {
-    // Set the image
-    $(".deck_image_list .product_img img").attr("src", "images/stack-0.png");
+  sections.each(function (index, element) {
+    const section = $(element).attr("href");
 
-    // Remove previous active class
-    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
+    // Effect for a element
+    $(document.body).on("appear", section, function (e, appeared) {
+      // Set the image
+      $(".deck_image_list .product_img img").attr("src", "images/stack-" + index + ".png");
 
-    // Set active class for current nav
-    $(".deck_menu_list .list-inline .deck_menu_item a#overview-link").addClass(
-      "active"
-    );
-  });
+      // Remove previous active class
+      $(".deck_menu_list a").removeClass("active");
 
-  // Effect for a element
-  $(document.body).on("appear", "#provision", function (e, $affected) {
-    // Set the image
-    $(".deck_image_list .product_img img").attr("src", "images/stack-1.png");
-
-    // Remove previous active class
-    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
-
-    // Set active class for current nav
-    $(".deck_menu_list .list-inline .deck_menu_item a#provision-link").addClass(
-      "active"
-    );
-  });
-
-  // Effect for a element
-  $(document.body).on("appear", "#secure", function (e, $affected) {
-    // Set the image
-    $(".deck_image_list .product_img img").attr("src", "images/stack-2.png");
-
-    // Remove previous active class
-    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
-
-    // Set active class for current nav
-    $(".deck_menu_list .list-inline .deck_menu_item a#secure-link").addClass(
-      "active"
-    );
-  });
-
-  // Effect for a element
-  $(document.body).on("appear", "#connect", function (e, $affected) {
-    // Set the image
-    $(".deck_image_list .product_img img").attr("src", "images/stack-3.png");
-
-    // Remove previous active class
-    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
-
-    // Set active class for current nav
-    $(".deck_menu_list .list-inline .deck_menu_item a#connect-link").addClass(
-      "active"
-    );
-  });
-
-  // Effect for a element
-  $(document.body).on("appear", "#run", function (e, $affected) {
-    // Set the image
-    $(".deck_image_list .product_img img").attr("src", "images/stack-0.png");
-
-    // Remove previous active class
-    $(".deck_menu_list .list-inline .deck_menu_item a").removeClass("active");
-
-    // Set active class for current nav
-    $(".deck_menu_list .list-inline .deck_menu_item a#run-link").addClass(
-      "active"
-    );
+      // Set active class for current nav
+      $(".deck_menu_list a" + section + "-link").addClass(
+        "active"
+      );
+    });
   });
 });
