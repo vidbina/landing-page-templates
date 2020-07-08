@@ -56,15 +56,16 @@ $(function () {
     // Effect for a element
     $(document.body).on("appear", section, function (e, appeared) {
       // Set the image
-      $(".deck_image_list .product_img img").attr("src", "images/stack-" + index + ".png");
+      $(".deck_image_list .product_img img").attr(
+        "src",
+        "images/stack-" + index + ".png"
+      );
 
       // Remove previous active class
       $(".deck_menu_list a").removeClass("active");
 
       // Set active class for current nav
-      $(".deck_menu_list a" + section + "-link").addClass(
-        "active"
-      );
+      $(".deck_menu_list a" + section + "-link").addClass("active");
     });
   });
 });
