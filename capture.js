@@ -1,4 +1,7 @@
 const puppeteer = require("puppeteer");
+const {
+  default: fullPageScreenshot,
+} = require("puppeteer-full-page-screenshot");
 const httpServer = require("http-server");
 const path = require("path");
 
@@ -35,8 +38,8 @@ const outputs = [
       const page = await browser.newPage();
       await page.setViewport(output.viewport);
       await page.goto(`http://${host}/index.html`);
-      await page.screenshot({
-        fullPage: true,
+
+      await fullPageScreenshot(page, {
         path: `${folder}/preview-${output.filenamePostfix}.png`,
       });
     })
