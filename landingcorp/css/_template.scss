@@ -63,6 +63,18 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased !important;
+
+  a[type="button"],
+  button,
+  input,
+  input[type="checkbox"],
+  input[type="submit"] {
+    border-radius: 2px;
+  }
+
+  &.body-open-menu {
+    overflow: hidden;
+  }
 }
 
 // Section Heading
@@ -93,6 +105,9 @@ body {
 
 // Navbar
 .header {
+  &.header-open-menu {
+    height: 100vh;
+  }
   .navbar {
     .navbar-brand {
       padding-right: 50px;
@@ -508,31 +523,30 @@ body {
       flex: 2;
       ul {
         position: sticky;
-            top: 50%;
-    bottom: 0;
-    width: auto;
-    padding-top: 0;
-    transform: translateY(-60px);
+        top: 50%;
+        bottom: 0;
+        width: auto;
+        padding-top: 0;
+        transform: translateY(-60px);
         .deck_menu_item {
-        text-transform: capitalize;
-        a {
-          transition: all 0.3s ease-in-out;
-          color: $foregroundSecondaryColor;
-          font-size: 14px;
-          &:hover {
-            color: $foregroundInversePrimaryColor;
-            text-decoration: none;
-          }
+          text-transform: capitalize;
+          a {
+            transition: all 0.3s ease-in-out;
+            color: $foregroundSecondaryColor;
+            font-size: 14px;
+            &:hover {
+              color: $foregroundInversePrimaryColor;
+              text-decoration: none;
+            }
 
-          &:active {
+            &:active {
+              color: $foregroundInversePrimaryColor;
+            }
+          }
+          .active {
             color: $foregroundInversePrimaryColor;
           }
         }
-        .active {
-          color: $foregroundInversePrimaryColor;
-        }
-
-      }
       }
     }
     .deck_text {
@@ -554,46 +568,46 @@ body {
         }
       }
     }
-    .deck_image_list{
-        flex: 3;
-      ul{
-          position: sticky;
-          top: 0;
-          bottom: auto;
-          width: auto;
-          padding-top: 130px;
-          li{
-            .product_img{
-              img{
-              -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-              }
+    .deck_image_list {
+      flex: 3;
+      ul {
+        position: sticky;
+        top: 0;
+        bottom: auto;
+        width: auto;
+        padding-top: 130px;
+        li {
+          .product_img {
+            img {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
             }
           }
         }
       }
+    }
   }
 }
 @-webkit-keyframes test {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+  }
 }
 @keyframes test {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+  }
 }
 
 // Integration Section
@@ -953,6 +967,22 @@ body {
 
 @media only screen and (max-width: 991px) {
   .header .navbar {
+    .navbar-toggler {
+      border: none;
+
+      > .close-menu {
+        display: inline;
+      }
+
+      &.collapsed > .close-menu,
+      &:not(.collapsed) > .open-menu {
+        display: none;
+      }
+
+      .menu-icon {
+        color: black;
+      }
+    }
     .navbar-nav {
       .nav-item {
         .menu_area {
