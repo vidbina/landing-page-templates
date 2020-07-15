@@ -37,6 +37,11 @@ $defaultSize: 1rem;
 $smallSize: 0.87rem;
 $extraSmallSize: 0.6rem;
 
+// Navbar Logo
+$navbarLogoFontSize: 1.25rem; // NOTE: icon edge length should be a multiple
+$navbarLogoFontWeight: 700;
+$navbarLogoSize: 2em; // NOTE: should be > $navbarLogoFontSize
+
 // Transition Effect
 .transition {
   transition: all 0.3s ease-in-out;
@@ -110,8 +115,26 @@ body {
   }
   .navbar {
     .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: $foregroundPrimaryColor;
       padding-right: 50px;
-      color: $accentPrimaryColor;
+
+      font-weight: $navbarLogoFontWeight;
+      font-size: $navbarLogoFontSize;
+      margin-right: 0;
+
+      .logo {
+        display: inline-block;
+        line-height: 0;
+        img {
+          height: $navbarLogoFontSize;
+          width: $navbarLogoFontSize;
+        }
+      }
+      .wordmark {
+        margin-left: 0.5rem;
+      }
     }
     .navbar-nav {
       .mega_dropdown {
@@ -1286,6 +1309,11 @@ body {
 
 @media only screen and (max-width: 575px) {
   .header {
+    .navbar-brand {
+      .wordmark {
+        display: none;
+      }
+    }
     .navbar-toggler {
       border-color: #fff;
     }
